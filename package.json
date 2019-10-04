@@ -1,0 +1,26 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "CodeBreak-Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aSrivastaava/page-transition.git"
+  },
+  "author": "aSrivastaava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aSrivastaava/page-transition/issues"
+  },
+  "homepage": "https://github.com/aSrivastaava/page-transition#readme",
+  "devDependencies": {
+    "sass": "^1.23.0"
+  },
+  "dependencies": {
+    "@dogstudio/highway": "^2.1.3",
+    "gsap": "^2.1.3"
+  }
+}
