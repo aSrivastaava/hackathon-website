@@ -184,7 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style/main.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"C:\\Users\\adity\\Desktop\\hackathon\\images\\winner.jpg":[["winner.27009916.jpg","../images/winner.jpg"],"../images/winner.jpg"],"C:\\Users\\adity\\Desktop\\hackathon\\images\\runner1.jpg":[["runner1.b2c2edd1.jpg","../images/runner1.jpg"],"../images/runner1.jpg"],"C:\\Users\\adity\\Desktop\\hackathon\\images\\runner2.jpg":[["runner2.5fa82641.jpg","../images/runner2.jpg"],"../images/runner2.jpg"],"C:\\Users\\adity\\Desktop\\hackathon\\images\\girlWinner.jpg":[["girlWinner.9aa06585.jpg","../images/girlWinner.jpg"],"../images/girlWinner.jpg"],"C:\\Users\\adity\\Desktop\\hackathon\\images\\MIT-ADT-1.jpg":[["MIT-ADT-1.37ca8e85.jpg","../images/MIT-ADT-1.jpg"],"../images/MIT-ADT-1.jpg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -388,4 +393,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/index.js.map
+//# sourceMappingURL=/main.3d6386d6.js.map

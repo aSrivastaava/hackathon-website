@@ -1,113 +1,537 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+
+<head>
+
+
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.e0c02e61.css">
-    <title>CodeBreak</title>
-  <script src="/style.e0c02e61.js"></script></head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
 
-  <body>
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="/index.html" class="glitch" data-glitch="Home">Home</a>
-        </li>
-        <li>
-          <a href="/pages\about.html" class="glitch" data-glitch="About">About</a>
-        </li>
-        <li>
-          <a href="/pages\sponsors.html" class="glitch" data-glitch="Sponsors">Sponsors</a>
-        </li>
-        <li>
-          <a href="/pages\event.html" class="glitch" data-glitch="Events">Events</a>
-        </li>
-        <li>
-          <a href="/pages\contact.html" class="glitch" data-glitch="Contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:700" rel="stylesheet">
 
-    <!-- <main data-router-wrapper> -->
-    <section id="home">
-      <div class="typewriter-home banner-section">
-        <div class="typewriter-text">&lt;Code Break/&gt;</div>
-      </div>
-      <button type="submit" class="glitch-button apply-button" data-glitch="Apply with Devfolio">
-        Apply with Devfolio
-      </button>
-
-      <canvas></canvas>
-    </section>
-    <!-- </main> -->
-    <!-- <section id="about">
-        <h1>About</h1>
-        <p>
-          Codebreak is a hackathon where students from all over the nation would
-          participate. In this hackathon, participants will solve any one of the
-          given problem statements within the span of 26 hours. The best
-          solution will be awarded as winner by a panel of experts. The
-          hackathon will be organized in collaboration with “Devfolio”.
-        </p>
-      </section>
-      <section id="sponsors">
-        <h1>Sponsors</h1>
-        <p>
-          We aim organisations like AWS, Quickheal, Redhat, NVIDIA and many more
-          who mostly sponsor events like this, are professional in this
-          department, which bring importance on the table on such a technically
-          active event. These organisations would bring light to various issues
-          and may keep their problem statement to be solved, so in the near
-          future these students will get a platform to showcase their talent on
-          real problems faced in the industry.
-        </p>
-      </section>
-      <section id="faqs">
-        <h1>FAQs</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          animi esse unde. Quas, molestias. Adipisci suscipit distinctio
-          voluptatum, accusamus ex, perspiciatis ipsum ea, libero neque quod
-          obcaecati assumenda exercitationem facilis.
-        </p>
-      </section>
-      <section id="contact">
-        <h1>Contacts</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          animi esse unde. Quas, molestias. Adipisci suscipit distinctio
-          voluptatum, accusamus ex, perspiciatis ipsum ea, libero neque quod
-          obcaecati assumenda exercitationem facilis.
-        </p>
-      </section>
-    </div> -->
-    <!-- 
-    <section id="about">
-      <div>
-        <img
-          src="./images/Final.png"
-          alt=""
-          id="logo-section"
-          height="150"
-          ,
-          width="250"
-        />
-      </div>
-      <div class="container">
-        <div class="typewriter info-section">
-          <div class="typewriter-text">About &lt;Code Break/&gt;</div>
-        </div>
-        <div>
-          Codebreak is a hackathon where students from all over the nation would
-          participate. In this hackathon, participants will solve any one of the
-          given problem statements within the span of 26 hours. The best
-          solution will be awarded as winner by a panel of experts. The
-          hackathon will be organized in collaboration with “Devfolio”.
-        </div>
-      </div>
-
-      <canvas></canvas>
-    </section> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="/main.3d6386d6.css">
     <script src="/js.00a46daa.js"></script>
-    <script src="/canvas.3c4ee9e8.js"></script>
-  </body>
+    <title>CodeBreak</title>
+
+
+<script src="/main.3d6386d6.js"></script></head>
+
+<body>
+    <div class="welcome">
+        <div class="zoom">
+            <div class="top-animation">
+                <table class="top-animation-table">
+                    <tbody>
+                        <tr>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="name-container">
+                    <p class="name">C O D E&nbsp;&nbsp;B R E A K</p>
+                </div>
+            </div>
+            <div class="left-animation">
+                <div class="left-animation-cont">
+                    <table class="left-animation-table">
+                        <tr class="pixel-container">
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                        </tr>
+                        <tr class="pixel-container">
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                        </tr>
+                        <tr class="pixel-container">
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="hourglass-container">
+                    <svg version="1.1" class="hourglass1" viewBox="0 0 286 405" style="enable-background:new 0 0 286 405;" xml:space="preserve">
+                        <polygon class="hourglass" points="0.5,-0.5 280.5,83.5 0.5,399.5 274.5,352.5 "></polygon>
+                    </svg>
+                </div>
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+ 
+                <!-- Left side chain
+
+                     <div class="chain">
+                    <div class="chain-f">
+                        <div class="inside-chain"></div>
+                    </div>
+                    <div class="chain-f"></div>
+                    <div class="chain-f"></div>
+                </div>
+             -->
+
+            </div>
+            <div class="cBreak-container">
+                <img class="cBreak" src="/Final.ba7b4890.png">
+            </div>
+            <div class="right-animation">
+                <div class="left-animation-cont">
+                    <table class="left-animation-table">
+                        <tr class="pixel-container">
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                        </tr>
+                        <tr class="pixel-container">
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                        </tr>
+                        <tr class="pixel-container">
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                            <td class="pixel"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="hourglass-container">
+
+                    <svg version="1.1" class="hourglass1" viewBox="0 0 286 405" style="enable-background:new 0 0 286 405;" xml:space="preserve">
+                        <polygon class="hourglass" points="0.5,-0.5 280.5,83.5 0.5,399.5 274.5,352.5 "></polygon>
+                    </svg>
+
+                </div>
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                
+                <!--Right side chain 
+
+                    <div class="chain">
+                    <div class="chain-f">
+                        <div class="inside-chain"></div>
+                    </div>
+                    <div class="chain-f"></div>
+                    <div class="chain-f"></div>
+                </div> -->
+
+
+            </div>
+            <div class="cBreak-button-container">
+                <button class="cBreak-button"><img src="/devfolio-icon.a5fb3ae3.jpg" alt="devfolio-button" width="50vh" class="cBreak-button-icon"><p>Apply with Devfolio</p></button>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+
+        <div class="cBreak-about mobile cBreak-about-m">
+            <div class="dateE"><span style="font-size: 80px;">21</span><br><span style="font-size:20px;">December</span>
+            </div>
+            <div class="cBreak-bg"></div>
+        </div>
+        <div class="about-text">
+            <h1 class="about-title">About</h1>
+            <div class="about-text-container">
+            <p>Codebreak is a hackathon where students from all over the nation would
+            participate.</p>
+            <p>In this hackathon, participants will solve any one of the given problem
+            statements within the span of 26 hours.</p>
+
+            <p>The best solution will be awarded as
+            winner by a panel of experts.
+            </p>
+            <p>The hackathon will be organized in collaboration
+            with “Devfolio”.</p>
+        </div></div>
+        <div class="cBreak-about desktop">
+            <div class="dateE"><span style="font-size: 80px;">21</span><br><span style="font-size:20px;">December</span>
+            </div>
+            <div class="cBreak-bg"></div>
+        </div>
+    </div>
+    <div class="sponsors">
+        <p class="sponsors-title sponsor-t" style="padding-top: 30px;"><i class="fas fa-chevron-right a-r"></i>Our Sponsors</p>
+        <br>
+        <div style="padding-top:20px;padding-bottom: 20px;">
+            <div class="sponsor-container">
+                <div class="sponsor html-card">
+                    <div class="number">01</div>
+                    <div class="corner-top-left corner"></div>
+                    <div class="corner-top-right corner"></div>
+                    <div class="corner-bottom-left corner"></div>
+                    <div class="corner-bottom-right corner"></div>
+                    <div class="sponsor-content">
+                        <p class="sponsor-title">Devfolio</p>
+                        <i class="devicon-html5-plain html dev-icon"></i>
+                    </div>
+                </div>
+                <div class="progress html">
+                    <ul class="progress-bars">
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sponsor-container">
+                <div class="sponsor html-card css-card">
+                    <div class="number">02</div>
+                    <div class="corner-top-left corner"></div>
+                    <div class="corner-top-right corner"></div>
+                    <div class="corner-bottom-left corner"></div>
+                    <div class="corner-bottom-right corner"></div>
+                    <div class="sponsor-content">
+                        <p class="sponsor-title">We're consulting</p>
+                        <i class="devicon-css3-plain dev-icon"></i>
+                    </div>
+                </div>
+                <div class="progress html">
+                    <ul class="progress-bars">
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sponsor-container">
+                <div class="sponsor html-card js">
+                    <div class="number">03</div>
+                    <div class="corner-top-left corner"></div>
+                    <div class="corner-top-right corner"></div>
+                    <div class="corner-bottom-left corner"></div>
+                    <div class="corner-bottom-right corner"></div>
+                    <div class="sponsor-content">
+                        <p class="sponsor-title">We're consulting</p>
+                        <i class="devicon-javascript-plain dev-icon"></i>
+                    </div>
+                </div>
+                <div class="progress html">
+                    <ul class="progress-bars">
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sponsor-container">
+                <div class="sponsor html-card">
+                    <div class="number">04</div>
+                    <div class="corner-top-left corner"></div>
+                    <div class="corner-top-right corner"></div>
+                    <div class="corner-bottom-left corner"></div>
+                    <div class="corner-bottom-right corner"></div>
+                    <div class="sponsor-content">
+                        <p class="sponsor-title">We're consulting</p><i class="devicon-jquery-plain dev-icon"></i>
+                    </div>
+                </div>
+                <div class="progress html">
+                    <ul class="progress-bars">
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sponsor-container">
+                <div class="sponsor html-card">
+                    <div class="number">05</div>
+                    <div class="corner-top-left corner"></div>
+                    <div class="corner-top-right corner"></div>
+                    <div class="corner-bottom-left corner"></div>
+                    <div class="corner-bottom-right corner"></div>
+                    <div class="sponsor-content">
+                    <p class="sponsor-title">We're consulting</p><i class="fas fa-envelope dev-icon"></i>
+                    </div>
+                </div>
+                <div class="progress html">
+                    <ul class="progress-bars">
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sponsor-container">
+                <div class="sponsor html-card">
+                    <div class="number">06</div>
+                    <div class="corner-top-left corner"></div>
+                    <div class="corner-top-right corner"></div>
+                    <div class="corner-bottom-left corner"></div>
+                    <div class="corner-bottom-right corner"></div>
+                    <div class="sponsor-content">
+                    <p class="sponsor-title">We're consulting</p> <i class="devicon-mysql-plain dev-icon"></i>
+                    </div>
+                </div>
+                <div class="progress html">
+                    <ul class="progress-bars">
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sponsor-container">
+                <div class="sponsor html-card">
+                    <div class="number">07</div>
+                    <div class="corner-top-left corner"></div>
+                    <div class="corner-top-right corner"></div>
+                    <div class="corner-bottom-left corner"></div>
+                    <div class="corner-bottom-right corner"></div>
+                    <div class="sponsor-content">
+                    <p class="sponsor-title">We're consulting</p> <i class="devicon-java-plain dev-icon"></i>
+                    </div>
+                </div>
+                <div class="progress html">
+                    <ul class="progress-bars">
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sponsor-container">
+                <div class="sponsor html-card android-card">
+                    <div class="number">08</div>
+                    <div class="corner-top-left corner"></div>
+                    <div class="corner-top-right corner"></div>
+                    <div class="corner-bottom-left corner"></div>
+                    <div class="corner-bottom-right corner"></div>
+                    <div class="sponsor-content">
+                    <p class="sponsor-title">We're consulting</p>  <i class="devicon-android-plain dev-icon"></i>
+                    </div>
+                </div>
+                <div class="progress html">
+                    <ul class="progress-bars">
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                        <li class="bar"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prizes">
+        <p class="sponsors-title prize-t" style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i class="fas fa-chevron-right a-r"></i>Prizes</p><br>
+        <div style="position: relative;">
+            <!-- <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="nxt"><i class="fas fa-chevron-right"></i></button> -->
+            <div class="multiple-items">
+                <div class="prize">
+                    <div class="prize-img winner">
+                        <div class="prize-number">01</div>
+                        <div class="prize-detail">
+                            <div class="prize-trata">Winner</div>
+                            <div class="prize-title">Rs.<br>40,000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prize">
+                    <div class="prize-img runner1">
+                        <div class="prize-number">02</div>
+                        <div class="prize-detail">
+                            <div class="prize-trata">1st Runner up</div>
+                            <div class="prize-title">Rs.<br>25,000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prize">
+                    <div class="prize-img runner2">
+                        <div class="prize-number">03</div>
+                        <div class="prize-detail">
+                            <div class="prize-trata">2nd Runner up</div>
+                            <div class="prize-title">Rs.<br>10,000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prize">
+                    <div class="prize-img girlWinner">
+                        <div class="prize-number">04</div>
+                        <div class="prize-detail">
+                            <div class="prize-trata">Best All Girls Team</div>
+                            <div class="prize-title">Rs. <br>5,000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prize">
+                    <div class="prize-img school">
+                        <div class="prize-number">05</div>
+                        <div class="prize-detail">
+                            <div class="prize-trata">Best MIT Team</div>
+                            <div class="prize-title">Rs. <br>5000</div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="contact-me"><container>
+        <p class="sponsors-title prize-t" style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i class="fas fa-chevron-right a-r"></i>contact-me</p><br>
+        <container>
+            <loader>info@codebreak.com
+            </loader>
+        </container>
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="526" height="453" id="gmap_canvas" src="https://maps.google.com/maps?q=mit%20school%20of%20engineering&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/">elementor coupon</a></div>
+            <style>.mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 453px;
+                    width: 526px;
+                }
+        
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 453px;
+                    width: 526px;
+                }</style>
+        </div>
+       
+    </container></div>
+</body>
+
 </html>
