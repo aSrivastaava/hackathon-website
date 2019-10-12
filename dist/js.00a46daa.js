@@ -118,7 +118,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/index.js":[function(require,module,exports) {
-//import particles-js
 $(document).ready(function () {
   $(".multiple-items").slick({
     infinite: true,

@@ -23,7 +23,55 @@
 <body>
 <div id="particles-js"></div>
 <div class="everything">
-    <div class="welcome">
+
+    <div class="menu-bar">
+        <menu>
+        <li>
+            <button onclick="window.location.href='#intro'">
+                <span>&lt;&gt;</span>
+                <span>CodeBreak</span>
+            </button>
+        </li>
+    
+        <li>
+            <button onclick="window.location.href='#about'">
+                <span class="offset-1">i</span>
+                <span>about</span>
+            </button>
+        </li>
+    
+        <li>
+            <button onclick="window.location.href='#sponsors'">
+                <span class="offset-1">$</span>
+                <span>Sponsors</span>
+            </button>
+        </li>
+    
+        <li>
+            <button onclick="window.location.href='#prize'">
+                <span>&#127942;</span>
+                <span>Prizes</span>
+            </button>
+        </li>
+    
+        <li>
+            <button onclick="window.location.href='#together'">
+                <span>&#128222;</span>
+                <span>Contact</span>
+            </button>
+        </li>
+    
+        <li>
+            <button onclick="window.location.href='#together'">
+                <span>?</span>
+                <span>FAQ</span>
+            </button>
+        </li>
+    </menu>
+</div>
+
+
+    <div class="welcome" id="intro">
         <div class="zoom">
             <div class="top-animation">
                 <table class="top-animation-table">
@@ -153,7 +201,7 @@
             Apply with Devfolio</a></div>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
 
         <div class="cBreak-about mobile cBreak-about-m">
             <div class="dateE"><span style="font-size: 80px;">21</span><br><span style="font-size:20px;">December</span>
@@ -180,7 +228,7 @@
             <div class="cBreak-bg"></div>
         </div>
     </div>
-    <div class="sponsors">
+    <div class="sponsors" id="sponsors">
         <p class="sponsors-title sponsor-t" style="padding-top: 30px;"><i class="fas fa-chevron-right a-r"></i>Our Sponsors</p>
         <br>
         <div style="padding-top:20px;padding-bottom: 20px;">
@@ -460,20 +508,18 @@
             </div>
         </div>
     </div>
-    <div class="prizes">
+    <div class="prizes" id="prize">
         <p class="sponsors-title prize-t"
             style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i
                 class="fas fa-chevron-right a-r"></i>Prizes</p><br>
-        <div style="position: relative;">
-            <!-- <button class="prev"><i class="fas fa-chevron-left"></i></button>
-            <button class="nxt"><i class="fas fa-chevron-right"></i></button> -->
+       
             <div class="multiple-items">
                 <div class="prize">
                     <div class="prize-img winner">
                         <div class="prize-number">01</div>
                         <div class="prize-detail">
                             <div class="prize-trata">Winner</div>
-                            <div class="prize-title">Rs.<br>40,000</div>
+                            <div class="prize-title">Rs.<span class="count">40000</span></div>
                         </div>
                     </div>
                 </div>
@@ -482,7 +528,7 @@
                         <div class="prize-number">02</div>
                         <div class="prize-detail">
                             <div class="prize-trata">1st Runner up</div>
-                            <div class="prize-title">Rs.<br>25,000</div>
+                            <div class="prize-title">Rs.<span class="count">25000</span></div>
                         </div>
                     </div>
                 </div>
@@ -491,7 +537,7 @@
                         <div class="prize-number">03</div>
                         <div class="prize-detail">
                             <div class="prize-trata">2nd Runner up</div>
-                            <div class="prize-title">Rs.<br>10,000</div>
+                            <div class="prize-title">Rs.<span class="count">10000</span></div>
                         </div>
                     </div>
                 </div>
@@ -500,7 +546,7 @@
                         <div class="prize-number">04</div>
                         <div class="prize-detail">
                             <div class="prize-trata">Best All Girls Team</div>
-                            <div class="prize-title">Rs. <br>5,000</div>
+                            <div class="prize-title">Rs. <span class="count">5000</span></div>
                         </div>
                     </div>
                 </div>
@@ -509,7 +555,7 @@
                         <div class="prize-number">05</div>
                         <div class="prize-detail">
                             <div class="prize-trata">Best MIT Team</div>
-                            <div class="prize-title">Rs. <br>5000</div>
+                            <div class="prize-title">Rs. <span  class="count">5000</span></div>
                         </div>
                     </div>
                 </div>
@@ -522,7 +568,7 @@
     
 
 
-<div class="together">
+<div class="together" id="together">
     <div class="contact-me">
         <container>
         <p class="sponsors-title contact-t"
@@ -584,42 +630,30 @@
         <div class="faq-boxes">
         <ul class="accordion">
             <li>
-                <a class="toggle" href=#>Item 1</a>
+                <a class="toggle" href=#>Question 1</a>
                 <p class="inner">
-                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some
-                    happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care.
-                    When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the
-                    wind to blow you around.
+                    Answer 1
                 </p>
             </li>
         
             <li>
-                <a class="toggle" href=#>Item 2</a>
+                <a class="toggle" href=#>Question 2</a>
                 <p class="inner">
-                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some
-                    happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care.
-                    When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the
-                    wind to blow you around.
+                    Answer 2
                 </p>
             </li>
         
             <li>
-                <a class="toggle" href=#>Item 3</a>
+                <a class="toggle" href=#>Question 3</a>
                 <p class="inner">
-                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some
-                    happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care.
-                    When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the
-                    wind to blow you around.
+                    Answer 3
                 </p>
             </li>
         
             <li>
-                <a class="toggle" href=#>Item 4</a>
+                <a class="toggle" href=#>Question 4</a>
                 <p class="inner">
-                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some
-                    happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care.
-                    When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the
-                    wind to blow you around.
+                    Answer 4
                 </p>
             </li>
         </ul></div>
@@ -629,7 +663,6 @@
     </div>
 
     <script>
-
         $(".toggle").click(function (e) {
             e.preventDefault();
 
@@ -653,6 +686,19 @@
                 $this.next().slideToggle(350);
             }
         });
+
+
+        $('.count').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 1000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
 </script>
 </body>
 
