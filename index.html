@@ -53,20 +53,19 @@
                 <span id="offset">Prizes</span>
             </button>
         </li>
-    
+    <li>
+        <button onclick="window.location.href='#faq'">
+            <span>?</span>
+            <span id="offset">FAQ</span>
+        </button>
+    </li>
         <li>
-            <button onclick="window.location.href='#together'">
+            <button onclick="window.location.href='#contact'">
                 <span>&#128222;</span>
                 <span id="offset">Contact</span>
             </button>
         </li>
     
-        <li>
-            <button onclick="window.location.href='#together'">
-                <span>?</span>
-                <span id="offset">FAQ</span>
-            </button>
-        </li>
     </menu>
 </div>
 
@@ -565,16 +564,63 @@
         </div>
     </div>
 
+    <!-- ------------------Prize END----------------- -->
+
+    <div class="faq" id="faq">
+        <p class="sponsors-title faq-t"
+            style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i
+                class="fas fa-chevron-right a-r"></i>FAQ</p><br>
+        <div class="faq-boxes">
+            <ul class="accordion">
+                <li>
+                    <a class="toggle" href=#>Question 1</a>
+                    <p class="inner">
+                        Answer 1
+                    </p>
+                </li>
     
+                <li>
+                    <a class="toggle" href=#>Question 2</a>
+                    <p class="inner">
+                        Answer 2
+                    </p>
+                </li>
+    
+                <li>
+                    <a class="toggle" href=#>Question 3</a>
+                    <p class="inner">
+                        Answer 3
+                    </p>
+                </li>
+    
+                <li>
+                    <a class="toggle" href=#>Question 4</a>
+                    <p class="inner">
+                        Answer 4
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ----------------FAQ ENDS------------------ -->
 
 
-<div class="together" id="together">
-    <div class="contact-me">
+
+    <div class="contact-me" id="contact">
         <container>
         <p class="sponsors-title contact-t"
         style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i
             class="fas fa-chevron-right a-r"></i>contact-me</p><br>
-        <!-- <container>
+       <div class="together">
+            <div class="card">
+                <div class="card-content">
+                    <h1 class="t-glitch" data-glitch="MIT School Of Engineering">MIT School Of Engineering</h1>
+                    <p>Loni Kalbhor, Pune</p>
+                    <p class="related"><strong>Kunj Shah</strong>: 9029624133<br><strong>Akshay Yelawale</strong>: 8446005040</p>
+                </div>
+            </div>
+
+            <!-- <container>
             <loader>info@codebreak.com
             </loader>
         </container> -->
@@ -622,47 +668,14 @@
         </div>
 
         </div>
-
-<div class="faq">
-    <p class="sponsors-title faq-t"
-    style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i
-        class="fas fa-chevron-right a-r"></i>FAQ</p><br>
-        <div class="faq-boxes">
-        <ul class="accordion">
-            <li>
-                <a class="toggle" href=#>Question 1</a>
-                <p class="inner">
-                    Answer 1
-                </p>
-            </li>
-        
-            <li>
-                <a class="toggle" href=#>Question 2</a>
-                <p class="inner">
-                    Answer 2
-                </p>
-            </li>
-        
-            <li>
-                <a class="toggle" href=#>Question 3</a>
-                <p class="inner">
-                    Answer 3
-                </p>
-            </li>
-        
-            <li>
-                <a class="toggle" href=#>Question 4</a>
-                <p class="inner">
-                    Answer 4
-                </p>
-            </li>
-        </ul></div>
-    </div>
 </div>
+
     <!-- body components ends -->
     </div>
 
     <script>
+        
+
         $(".toggle").click(function (e) {
             e.preventDefault();
 

@@ -88,7 +88,7 @@ body {
 .name {
   color: #fff;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Orbitron", sans-serif;
   animation: name 0.2s ease 1.3s forwards;
   opacity: 0;
@@ -697,7 +697,7 @@ body {
   position: absolute;
   left: 0px;
   top: 60px;
-  font-size: 20px;
+  font-size: 30px;
   transform: rotate(-90deg);
 }
 
@@ -919,7 +919,7 @@ body {
 
 .sponsors-title {
   color: white;
-  font-size: 28px;
+  font-size: 30px;
   margin: 0;
   margin-bottom: 30px;
   text-align: left;
@@ -930,6 +930,7 @@ body {
 }
 
 .prize-t {
+  font-size: 30px;
   position: absolute;
   top: -47px;
 }
@@ -941,6 +942,7 @@ body {
 }
 
 .contact-t {
+  font-size: 30px;
   position: absolute;
   top: -80px;
   animation: skew 5s linear infinite;
@@ -1097,28 +1099,23 @@ body {
   background-color: #131413;
   position: relative;
   padding-top: 30px;
-  width: 50%;
 }
 
 .faq {
   background-color: #131413cb;
   position: relative;
-  padding-top: 30px;
-  width: 50%;
+  padding-bottom: 10px;
+  height: 50%;
   color: #fff;
   font-size: 15px;
   letter-spacing: 2px;
 }
 
 .faq-t {
+  font-size: 30px;
   position: absolute;
   top: -40px;
   animation: skew 5s linear infinite;
-}
-
-.together {
-  display: flex;
-  flex-direction: row;
 }
 
 .contact-title {
@@ -1137,10 +1134,15 @@ container {
   font-family: "Orbitron", sans-serif;
 }
 
+.together {
+  display: flex;
+  flex-direction: row;
+}
+
 .map {
   margin-bottom: 5vh;
   position: relative;
-  left: 20%;
+  left: 30%;
   background-color: transparent;
   animation: border-flicker 2s linear infinite;
 }
@@ -1621,6 +1623,91 @@ menu button:hover span:last-of-type {
   100% {
     border-color: #6f6;
     box-shadow: 0 0 55px #05e797, inset 0 0 30px #05e797, 0 4px 0 #000;
+  }
+}
+.card {
+  pointer-events: none;
+  color: white;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  top: 10vh;
+  left: 10%;
+  width: 400px;
+  height: 200px;
+  backface-visibility: hidden;
+  box-shadow: 0 0 5px #05e797;
+  background-color: transparent;
+}
+.card:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  border-radius: 50%;
+  left: 0;
+  bottom: -50px;
+  box-shadow: 0 30px 20px #05e797;
+}
+.card .card-content {
+  text-align: center;
+}
+.card p {
+  display: block;
+}
+.card a {
+  color: #69c6b8;
+  pointer-events: auto;
+}
+
+.t-glitch {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+.t-glitch:before,
+.t-glitch:after {
+  content: attr(data-glitch);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.t-glitch:after {
+  color: #f0f;
+  z-index: -2;
+  animation: glitch 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+}
+
+.t-glitch:before {
+  color: #0ff;
+  z-index: -1;
+  animation: glitch 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(1px, 1px);
+  }
+  40% {
+    transform: translate(-4px, 2px);
+  }
+  60% {
+    transform: translate(1px, 3px);
+  }
+  80% {
+    transform: translate(2px, -1px);
+  }
+  to {
+    transform: translate(0);
   }
 }
 
