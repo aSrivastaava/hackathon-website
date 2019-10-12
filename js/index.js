@@ -1,3 +1,4 @@
+//import particles-js
 $(document).ready(function() {
   $(".multiple-items").slick({
     infinite: true,
@@ -12,8 +13,6 @@ $(document).ready(function() {
   $(".nxt").on("click", function() {
     $(".slick-next")[0].click();
   });
-
-  //$('.about-title').text('About CodeBreak');
 
   screenSlick();
 
@@ -46,4 +45,3 @@ $(document).ready(function() {
     }
   }
 });
-

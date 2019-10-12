@@ -118,6 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/index.js":[function(require,module,exports) {
+//import particles-js
 $(document).ready(function () {
   $(".multiple-items").slick({
     infinite: true,
@@ -129,8 +130,7 @@ $(document).ready(function () {
   });
   $(".nxt").on("click", function () {
     $(".slick-next")[0].click();
-  }); //$('.about-title').text('About CodeBreak');
-
+  });
   screenSlick();
   $(window).resize(function () {
     screenSlick();
@@ -189,7 +189,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62179" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52084" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

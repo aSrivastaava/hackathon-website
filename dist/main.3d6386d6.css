@@ -743,7 +743,8 @@ body {
 .about-text-container {
   width: 70vh;
   height: 50vh;
-  margin: 10% 0;
+  margin: 10% 5%;
+  letter-spacing: 5px;
 }
 
 .cBreak-about,
@@ -800,6 +801,12 @@ body {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.sponsor-icon {
+  height: 10%;
+  float: right;
+  padding-bottom: 10%;
 }
 
 .html-card {
@@ -1088,10 +1095,9 @@ body {
 
 .contact-me {
   background-color: #131413;
-  text-align: center;
-  padding-bottom: 50px;
-  padding-right: 80%;
+  position: relative;
   padding-top: 30px;
+  width: 50%;
 }
 
 .contact-title {
@@ -1111,10 +1117,9 @@ container {
 }
 
 .map {
-  margin-top: 5vh;
+  margin-bottom: 5vh;
   position: relative;
-  padding-left: 90vh;
-  padding-top: 30px;
+  padding-left: 20%;
   animation: flick 1s ease 1s, a 5s linear 1s infinite;
 }
 

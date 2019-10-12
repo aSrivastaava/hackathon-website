@@ -12,9 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="/style/main.scss">
-    <script src="/js/index.js"></script>
-    <script src="/js/particle.js"></script>
+    <link rel="stylesheet" href="style/main.scss">
+    <script src="js/index.js"></script>
+    <script src="js/particle.js"></script>
     <title>CodeBreak</title>
 
 
@@ -193,7 +193,8 @@
                     <div class="corner-bottom-right corner"></div>
                     <div class="sponsor-content">
                         <p class="sponsor-title">Devfolio</p>
-                        <i class="devicon-html5-plain html dev-icon"></i>
+                        <!-- <i class="devicon-html5-plain html dev-icon"></i> -->
+                        <img src="./images/devfolio-icon.jpg" alt="devfolio-icon" class="sponsor-icon">
                     </div>
                 </div>
                 <div class="progress html">
@@ -517,17 +518,43 @@
             </div>
         </div>
     </div>
+
+    
+
+
+
     <div class="contact-me">
         <container>
         <p class="sponsors-title contact-t"
         style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i
             class="fas fa-chevron-right a-r"></i>contact-me</p><br>
-        <container>
+        <!-- <container>
             <loader>info@codebreak.com
             </loader>
-        </container>
+        </container> -->
         
-        <div class="map">
+        <div class="map mobile">
+            <div class="gmap_canvas"><iframe width="466" height="430" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=MIT%20School%20Of%20Engineering&t=k&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+            <!-- <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 430px;
+                    width: 466px;
+                }
+        
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 430px;
+                    width: 466px;
+                }
+            </style> -->
+        </div>
+
+        <div class="map desktop">
             <div class="gmap_canvas"><iframe width="466" height="430" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=MIT%20School%20Of%20Engineering&t=k&z=15&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
