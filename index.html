@@ -522,7 +522,7 @@
     
 
 
-
+<div class="together">
     <div class="contact-me">
         <container>
         <p class="sponsors-title contact-t"
@@ -576,8 +576,84 @@
         </div>
 
         </div>
-       
-    </div></div>
+
+<div class="faq">
+    <p class="sponsors-title faq-t"
+    style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i
+        class="fas fa-chevron-right a-r"></i>FAQ</p><br>
+        <div class="faq-boxes">
+        <ul class="accordion">
+            <li>
+                <a class="toggle" href=#>Item 1</a>
+                <p class="inner">
+                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some
+                    happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care.
+                    When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the
+                    wind to blow you around.
+                </p>
+            </li>
+        
+            <li>
+                <a class="toggle" href=#>Item 2</a>
+                <p class="inner">
+                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some
+                    happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care.
+                    When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the
+                    wind to blow you around.
+                </p>
+            </li>
+        
+            <li>
+                <a class="toggle" href=#>Item 3</a>
+                <p class="inner">
+                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some
+                    happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care.
+                    When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the
+                    wind to blow you around.
+                </p>
+            </li>
+        
+            <li>
+                <a class="toggle" href=#>Item 4</a>
+                <p class="inner">
+                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some
+                    happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care.
+                    When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the
+                    wind to blow you around.
+                </p>
+            </li>
+        </ul></div>
+    </div>
+</div>
+    <!-- body components ends -->
+    </div>
+
+    <script>
+
+        $(".toggle").click(function (e) {
+            e.preventDefault();
+
+            let $this = $(this);
+
+            if ($this.next().hasClass("show")) {
+                $this.next().removeClass("show");
+                $this.next().slideUp(350);
+            } else {
+                $this
+                    .parent()
+                    .parent()
+                    .find("li .inner")
+                    .removeClass("show");
+                $this
+                    .parent()
+                    .parent()
+                    .find("li .inner")
+                    .slideUp(350);
+                $this.next().toggleClass("show");
+                $this.next().slideToggle(350);
+            }
+        });
+</script>
 </body>
 
 </html>

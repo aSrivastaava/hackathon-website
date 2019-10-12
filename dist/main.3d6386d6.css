@@ -1100,6 +1100,27 @@ body {
   width: 50%;
 }
 
+.faq {
+  background-color: #131413cb;
+  position: relative;
+  padding-top: 30px;
+  width: 50%;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.faq-t {
+  position: absolute;
+  top: -40px;
+  animation: skew 5s linear infinite;
+}
+
+.together {
+  display: flex;
+  flex-direction: row;
+}
+
 .contact-title {
   margin: 0px 0px 0px 15px;
   font-size: 40px;
@@ -1333,5 +1354,44 @@ loader:after {
     opacity: 0;
   }
 }
+/***********************/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 75%;
+  position: relative;
+  left: 10%;
+}
+
+ul .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+
+ul li {
+  margin: 0.5em 0;
+}
+
+ul li a.toggle {
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+  padding: 0.75em;
+  border-radius: 0.15em;
+  transition: background 0.3s ease;
+}
+
+ul li a.toggle:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/***********************/
 
 /*# sourceMappingURL=/main.3d6386d6.css.map */
