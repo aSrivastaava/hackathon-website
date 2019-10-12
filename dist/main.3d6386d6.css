@@ -1140,8 +1140,9 @@ container {
 .map {
   margin-bottom: 5vh;
   position: relative;
-  padding-left: 20%;
-  animation: flick 1s ease 1s, a 5s linear 1s infinite;
+  left: 20%;
+  background-color: transparent;
+  animation: border-flicker 2s linear infinite;
 }
 
 loader {
@@ -1366,6 +1367,7 @@ ul {
   width: 75%;
   position: relative;
   left: 10%;
+  animation: border-flicker 2s linear infinite;
 }
 
 ul .inner {
@@ -1401,7 +1403,7 @@ button {
 .menu-bar {
   position: fixed;
   z-index: 1;
-  left: 27%;
+  left: 24%;
   top: 88%;
 }
 
@@ -1415,7 +1417,7 @@ menu {
 }
 
 menu li {
-  width: 110px;
+  width: 130px;
 }
 
 menu button {
@@ -1457,6 +1459,7 @@ menu button span:last-of-type {
 
 menu button:hover {
   width: 170px;
+  border: none;
   border-radius: 0;
 }
 
@@ -1466,6 +1469,159 @@ menu button:hover span:first-of-type {
 
 menu button:hover span:last-of-type {
   transform: translate(-50%, -50%);
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px #05e797;
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  77% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+}
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px #05e797;
+    -moz-box-shadow: 0px 0px 78px 4px #05e797;
+    box-shadow: 0px 0px 78px 4px #05e797;
+  }
+  2% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px #05e797;
+    -moz-box-shadow: 0px 0px 78px 4px #05e797;
+    box-shadow: 0px 0px 78px 4px #05e797;
+  }
+  4% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px #05e797;
+    -moz-box-shadow: 0px 0px 78px 4px #05e797;
+    box-shadow: 0px 0px 78px 4px #05e797;
+  }
+  8% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px #05e797;
+    -moz-box-shadow: 0px 0px 78px 4px #05e797;
+    box-shadow: 0px 0px 78px 4px #05e797;
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px #05e797;
+    -moz-box-shadow: 0px 0px 78px 4px #05e797;
+    box-shadow: 0px 0px 78px 4px #05e797;
+  }
+  100% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px #05e797;
+    -moz-box-shadow: 0px 0px 78px 4px #05e797;
+    box-shadow: 0px 0px 78px 4px #05e797;
+  }
+}
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  2% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  4% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  19% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  21% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  23% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  80% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  83% {
+    opacity: 0.4;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+  87% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #05e797;
+  }
+}
+@keyframes glow {
+  0% {
+    border-color: #393;
+    box-shadow: 0 0 15px #05e797, inset 0 0 10px #05e797, 0 4px 0 #000;
+  }
+  25% {
+    border-color: #6f6;
+    box-shadow: 0 0 30px #05e797, inset 0 0 15px #05e797, 0 4px 0 #000;
+  }
+  50% {
+    border-color: #6f6;
+    box-shadow: 0 0 40px #05e797, inset 0 0 20px #05e797, 0 4px 0 #000;
+  }
+  75% {
+    border-color: #6f6;
+    box-shadow: 0 0 50px #05e797, inset 0 0 25px #05e797, 0 4px 0 #000;
+  }
+  100% {
+    border-color: #6f6;
+    box-shadow: 0 0 55px #05e797, inset 0 0 30px #05e797, 0 4px 0 #000;
+  }
 }
 
 /*# sourceMappingURL=/main.3d6386d6.css.map */

@@ -1240,8 +1240,12 @@ container {
 .map {
   margin-bottom: 5vh;
   position: relative;
-  padding-left: 20%;
-  animation: flick 1s ease 1s, a 5s linear 1s infinite;
+  left: 20%;
+  //  padding-left: 20%;
+  background-color: transparent;
+  // animation: flick 1s ease 1s, a 5s linear 1s infinite;
+  animation: border-flicker 2s linear infinite;
+  //animation: glow 800ms ease-out infinite alternate;
 }
 
 loader {
@@ -1489,7 +1493,7 @@ ul {
   padding: 0;
   width: 75%;
   position: relative;
-  left: 10%;
+  left: 10%;animation: border-flicker 2s linear infinite;
 }
 
 ul .inner {
@@ -1500,6 +1504,8 @@ ul .inner {
 
 ul li {
   margin: 0.5em 0;
+  // animation: border-flicker 2s linear infinite;
+  //animation: glow 800ms ease-out infinite alternate;
 }
 
 ul li a.toggle {
@@ -1525,7 +1531,7 @@ button {
 .menu-bar {
   position: fixed;
   z-index: 1;
-  left: 27%;
+  left: 24%;
   top: 88%;
   // justify-content: center;
 }
@@ -1544,7 +1550,7 @@ menu {
 }
 
 menu li {
-  width: 110px;
+  width: 130px;
   // height: 60px;
 }
 
@@ -1589,6 +1595,7 @@ menu button span:last-of-type {
 
 menu button:hover {
   width: 170px;
+  border: none;
   border-radius: 0;
 }
 
@@ -1597,4 +1604,173 @@ menu button:hover span:first-of-type {
 }
 menu button:hover span:last-of-type {
   transform: translate(-50%, -50%);
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px rgb(5, 231, 151);
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+
+  77% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    -moz-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+  }
+  2% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    -moz-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+  }
+  4% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    -moz-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+  }
+
+  8% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    -moz-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    -moz-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+  }
+  100% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    -moz-box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+    box-shadow: 0px 0px 78px 4px rgb(5, 231, 151);
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  2% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  4% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+
+  19% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  21% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  23% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+
+  80% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  83% {
+    opacity: 0.4;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+  87% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(5, 231, 151);
+  }
+}
+
+@keyframes glow {
+  0% {
+    border-color: #393;
+    box-shadow: 0 0 15px rgb(5, 231, 151), inset 0 0 10px rgb(5, 231, 151),
+      0 4px 0 #000;
+  }
+
+  25% {
+    border-color: #6f6;
+    box-shadow: 0 0 30px rgb(5, 231, 151), inset 0 0 15px rgb(5, 231, 151),
+      0 4px 0 #000;
+  }
+  50% {
+    border-color: #6f6;
+    box-shadow: 0 0 40px rgb(5, 231, 151), inset 0 0 20px rgb(5, 231, 151),
+      0 4px 0 #000;
+  }
+  75% {
+    border-color: #6f6;
+    box-shadow: 0 0 50px rgb(5, 231, 151), inset 0 0 25px rgb(5, 231, 151),
+      0 4px 0 #000;
+  }
+  100% {
+    border-color: #6f6;
+    box-shadow: 0 0 55px rgb(5, 231, 151), inset 0 0 30px rgb(5, 231, 151),
+      0 4px 0 #000;
+  }
 }
