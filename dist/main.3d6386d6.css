@@ -1101,11 +1101,26 @@ body {
   padding-top: 30px;
 }
 
+.timelineDiv {
+  background-color: #1d1d1d;
+  position: relative;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.timelineDiv-t {
+  font-size: 30px;
+  position: absolute;
+  top: -40px;
+  animation: skew 5s linear infinite;
+}
+
 .faq {
   background-color: #131413cb;
   position: relative;
   padding-bottom: 10px;
-  height: 50%;
+  height: 90%;
   color: #fff;
   font-size: 15px;
   letter-spacing: 2px;
@@ -1116,6 +1131,11 @@ body {
   position: absolute;
   top: -40px;
   animation: skew 5s linear infinite;
+}
+
+.faq-boxes {
+  position: relative;
+  top: 10%;
 }
 
 .contact-title {
@@ -1405,7 +1425,7 @@ button {
 .menu-bar {
   position: fixed;
   z-index: 1;
-  left: 24%;
+  left: 20%;
   top: 88%;
 }
 
@@ -1708,6 +1728,91 @@ menu button:hover span:last-of-type {
   }
   to {
     transform: translate(0);
+  }
+}
+.timeline {
+  position: relative;
+  overflow: auto;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background: black;
+  left: 0;
+}
+.timeline h2 {
+  background: black;
+  max-width: 6em;
+  margin: 0 auto 1em;
+  padding: 0.5em;
+  text-align: center;
+  position: relative;
+  clear: both;
+}
+.timeline ul {
+  list-style: none;
+  padding: 0 0 0 1em;
+  z-index: 1;
+}
+.timeline li {
+  background: black;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.timeline li:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 1em solid black;
+  border-left: 1em solid transparent;
+  position: absolute;
+  left: -1em;
+  top: 0;
+}
+.timeline h3 {
+  margin-top: 0;
+}
+.timeline time {
+  font-style: italic;
+}
+
+@media screen and (min-width: 40em) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .timeline:before {
+    left: 50%;
+  }
+  .timeline ul {
+    padding-left: 0;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .timeline li {
+    animation: border-flicker 2s linear infinite;
+    width: 42%;
+    left: -19%;
+  }
+  .timeline li:nth-child(even) {
+    float: right;
+    margin-top: 2em;
+  }
+  .timeline li:nth-child(odd) {
+    float: left;
+  }
+  .timeline li:nth-child(odd):before {
+    border-top: 1em solid black;
+    border-right: 1em solid transparent;
+    right: -1em;
+    left: auto;
+  }
+  .timeline li:nth-of-type(2n + 1) {
+    clear: both;
   }
 }
 
