@@ -696,8 +696,8 @@ body {
   margin-top: 0;
   position: absolute;
   left: 0px;
-  top: 60px;
-  font-size: 30px;
+  top: 90px;
+  font-size: 40px;
   transform: rotate(-90deg);
 }
 
@@ -733,18 +733,21 @@ body {
 
 .about-text {
   font-family: "Orbitron", sans-serif;
+  font-size: 25px;
   width: calc(100% - 390px);
   margin-left: 100px;
   margin-top: 30px;
   line-height: 30px;
   color: #9fe525;
+  overflow: auto;
 }
 
 .about-text-container {
-  width: 70vh;
-  height: 50vh;
-  margin: 10% 5%;
-  letter-spacing: 5px;
+  text-align: justify;
+  padding: 5%;
+  margin: 5%;
+  letter-spacing: 7px;
+  word-spacing: 10px;
 }
 
 .cBreak-about,
@@ -854,7 +857,7 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 14px;
+  font-size: 19px;
 }
 
 .number:after {
@@ -874,7 +877,7 @@ body {
   padding: 2px 5px;
   font-weight: bold;
   margin: 0;
-  font-size: 16px;
+  font-size: 25px;
 }
 
 .sponsor .sponsor-title:first-child {
@@ -919,7 +922,7 @@ body {
 
 .sponsors-title {
   color: #9fe525;
-  font-size: 30px;
+  font-size: 40px;
   margin: 0;
   margin-bottom: 30px;
   text-align: left;
@@ -930,7 +933,7 @@ body {
 }
 
 .prize-t {
-  font-size: 30px;
+  font-size: 40px;
   position: absolute;
   top: -47px;
 }
@@ -942,7 +945,7 @@ body {
 }
 
 .contact-t {
-  font-size: 30px;
+  font-size: 40px;
   position: absolute;
   top: -80px;
   animation: skew 5s linear infinite;
@@ -994,20 +997,20 @@ body {
 }
 
 .prize-trata {
-  font-size: 14px;
+  font-size: 25px;
   margin-bottom: 5px;
   font-family: "Orbitron", sans-serif;
   text-shadow: 8px 8px rgba(126, 125, 125, 0.712);
 }
 
 .prize-title {
-  font-size: 25px;
+  font-size: 35px;
   font-family: "Orbitron", sans-serif;
   text-shadow: 8px 8px rgba(126, 125, 125, 0.712);
 }
 
 .prize-number {
-  font-size: 14px;
+  font-size: 24px;
   margin-bottom: 5px;
   font-family: "Orbitron", sans-serif;
   text-shadow: 8px 8px rgba(165, 161, 161, 0.712);
@@ -1105,12 +1108,12 @@ body {
   background-color: #1d1d1d;
   position: relative;
   color: #9fe525;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 
 .timelineDiv-t {
-  font-size: 30px;
+  font-size: 44px;
   position: absolute;
   top: -40px;
   animation: skew 5s linear infinite;
@@ -1122,12 +1125,12 @@ body {
   padding-bottom: 10px;
   height: 90%;
   color: #9fe525;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 
 .faq-t {
-  font-size: 30px;
+  font-size: 45px;
   position: absolute;
   top: -40px;
   animation: skew 5s linear infinite;
@@ -1165,6 +1168,8 @@ container {
   left: 30%;
   background-color: transparent;
   animation: border-flicker 2s linear infinite;
+  height: 500px;
+  width: 500px;
 }
 
 loader {
@@ -1319,8 +1324,15 @@ loader:after {
 
   .about-text {
     width: 100%;
-    display: block;
-    margin-left: 10%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 0%;
+    text-align: auto;
+  }
+
+  .about-title {
+    margin-left: -9%;
+    top: 5%;
   }
 
   .cBreak-about-m {
@@ -1328,6 +1340,12 @@ loader:after {
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 70px;
+  }
+
+  .faq-boxes {
+    position: relative;
+    top: 0;
+    overflow: auto;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1748,6 +1766,7 @@ menu button:hover span:last-of-type {
   background: black;
   max-width: 6em;
   margin: 0 auto 1em;
+  margin-top: 5%;
   padding: 0.5em;
   text-align: center;
   position: relative;
@@ -1775,7 +1794,7 @@ menu button:hover span:last-of-type {
   top: 0;
 }
 .timeline h3 {
-  margin-top: 0;
+  margin-top: 0%;
 }
 .timeline time {
   font-style: italic;
@@ -1783,7 +1802,7 @@ menu button:hover span:last-of-type {
 
 @media screen and (min-width: 40em) {
   .container {
-    max-width: 1000px;
+    max-width: 100px;
     margin: 0 auto;
   }
 
@@ -1793,12 +1812,12 @@ menu button:hover span:last-of-type {
   .timeline ul {
     padding-left: 0;
     max-width: 700px;
-    margin: 0 auto;
+    margin: 10 auto;
   }
   .timeline li {
     animation: border-flicker 2s linear infinite;
     width: 42%;
-    left: -19%;
+    left: -25%;
   }
   .timeline li:nth-child(even) {
     float: right;
@@ -1815,6 +1834,111 @@ menu button:hover span:last-of-type {
   }
   .timeline li:nth-of-type(2n + 1) {
     clear: both;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact-me {
+    background-color: #131413;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .together {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .map {
+    position: relative;
+    background-color: transparent;
+    animation: border-flicker 2s linear infinite;
+    height: 300px;
+    width: 320px;
+    margin-left: -20%;
+  }
+
+  .card {
+    pointer-events: none;
+    color: white;
+    position: relative;
+    width: 250px;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0 0 5px #9fe525;
+    background-color: transparent;
+  }
+  .card:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 50%;
+    left: 0;
+    bottom: -50px;
+    box-shadow: 0 30px 20px #9fe525;
+  }
+  .card .card-content {
+    position: relative;
+    text-align: center;
+  }
+  .card p {
+    display: inline;
+  }
+  .card a {
+    color: #69c6b8;
+    pointer-events: auto;
+  }
+
+  .t-glitch {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .t-glitch:before,
+.t-glitch:after {
+    content: attr(data-glitch);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0.8;
+  }
+
+  .t-glitch:after {
+    color: #f0f;
+    z-index: -2;
+    animation: glitch 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  }
+
+  .t-glitch:before {
+    color: #0ff;
+    z-index: -1;
+    animation: glitch 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  }
+
+  .about-text {
+    font-family: "Orbitron", sans-serif;
+    font-size: 25px;
+    margin-top: -40px;
+    line-height: 30px;
+    margin-bottom: 35px;
+    color: #9fe525;
+  }
+
+  .cBreak-container {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .cBreak-container .cBreak {
+    width: 100%;
+    animation: flick 1s ease 1s, a 5s linear 1s infinite;
   }
 }
 
