@@ -1161,16 +1161,17 @@ container {
 .together {
   display: flex;
   flex-direction: row;
+  align-content: center;
 }
 
 .map {
   margin-bottom: 5vh;
   position: relative;
-  left: 30%;
+  transform: translateX(80%);
   background-color: transparent;
   animation: border-flicker 2s linear infinite;
-  height: 500px;
-  width: 500px;
+  height: 550px;
+  width: 550px;
 }
 
 .socialHandler {
@@ -1678,9 +1679,9 @@ menu button:hover span:last-of-type {
   border-radius: 5px;
   position: relative;
   top: 10vh;
-  left: 10%;
-  width: 400px;
-  height: 200px;
+  transform: translateX(40%);
+  width: 500px;
+  height: 250px;
   backface-visibility: hidden;
   box-shadow: 0 0 5px #9fe525;
   background-color: transparent;
@@ -1700,8 +1701,12 @@ menu button:hover span:last-of-type {
   top: 15%;
   text-align: center;
 }
+.card h1 {
+  font-size: 39px;
+}
 .card p {
   display: block;
+  font-size: 22px;
 }
 .card a {
   color: #69c6b8;
@@ -1808,7 +1813,7 @@ menu button:hover span:last-of-type {
   font-style: italic;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 890px) {
   .container {
     max-width: 100px;
     margin: 0 auto;
@@ -1816,6 +1821,7 @@ menu button:hover span:last-of-type {
 
   .timeline:before {
     left: 50%;
+    transform: translateX(50%);
   }
   .timeline ul {
     padding-left: 0;
@@ -1825,7 +1831,7 @@ menu button:hover span:last-of-type {
   .timeline li {
     animation: border-flicker 2s linear infinite;
     width: 42%;
-    left: -25%;
+    transform: translateX(-52%);
   }
   .timeline li:nth-child(even) {
     float: right;
@@ -1844,7 +1850,7 @@ menu button:hover span:last-of-type {
     clear: both;
   }
 }
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 890px) {
   .contact-me {
     background-color: #131413;
     position: relative;
@@ -1863,15 +1869,16 @@ menu button:hover span:last-of-type {
     animation: border-flicker 2s linear infinite;
     height: 300px;
     width: 320px;
-    margin-left: -20%;
+    transform: translateX(18%);
   }
 
   .card {
     pointer-events: none;
     color: white;
     position: relative;
-    width: 250px;
+    width: 280px;
     height: 100%;
+    transform: translateX(14%);
     backface-visibility: hidden;
     box-shadow: 0 0 5px #9fe525;
     background-color: transparent;
@@ -1890,8 +1897,12 @@ menu button:hover span:last-of-type {
     position: relative;
     text-align: center;
   }
+  .card h1 {
+    font-size: 21px;
+  }
   .card p {
     display: inline;
+    font-size: 16px;
   }
   .card a {
     color: #69c6b8;
@@ -1902,7 +1913,7 @@ menu button:hover span:last-of-type {
     position: relative;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .t-glitch:before,
@@ -2199,6 +2210,18 @@ menu button:hover span:last-of-type {
     top: 8vh;
     left: 44.5%;
   }
+
+  .sponsor-message {
+    color: #9fe525;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 25px;
+  }
+
+  .sponsor-message a {
+    color: white;
+    margin: 25px 10px;
+  }
 }
 @media screen and (max-width: 756px) {
   .message {
@@ -2243,6 +2266,61 @@ menu button:hover span:last-of-type {
   .faq-boxes {
     position: relative;
     top: 10%;
+  }
+
+  .sponsor-message {
+    color: #9fe525;
+    font-size: 20px;
+  }
+
+  .sponsor-message p {
+    margin: 10px;
+  }
+
+  .sponsor-message a {
+    color: white;
+    margin: 0px 10px;
+  }
+}
+/*.......................Typewriter................*/
+.see-you-message {
+  background: #131413;
+  text-align: center;
+}
+
+#typewriter {
+  font-size: 2em;
+  margin: 0px;
+  font-family: inherit;
+  color: #9fe525;
+}
+#typewriter:after {
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

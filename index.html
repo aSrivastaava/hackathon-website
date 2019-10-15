@@ -244,7 +244,11 @@
     <div class="sponsors" id="sponsors">
         <p class="sponsors-title sponsor-t" style="padding-top: 30px;"><i class="fa fa-chevron-right a-r"></i>Our Sponsors</p>
         <br>
+        <div class="sponsor-message">
+            <p>Interested in becoming a sponsor? Email us at</p> <a href="mailto:sponsor@codebreak.co.in?subject=Wanted to sponsor">sponsor@codebreak.co.in</a>
+        </div>
         <div style="padding-top:20px;padding-bottom: 20px;">
+           
             <div class="sponsor-container">
                 <div class="sponsor html-card">
                     <div class="number">01</div>
@@ -733,8 +737,13 @@
             <loader>info@codebreak.com
             </loader>
         </container></div> -->
-</div>
-<!-- --------------------------Contact us ENDs---------------- -->
+
+<!-- --------------------------Contact us ENDs---------------- --></div>
+<!-- <div class="line-1 anim-typewriter"><h1>See you soon.</h1></div> -->
+<div class="see-you-message">
+<pre id="typewriter">
+<strong>SEE YOU SOON</strong>
+</pre></div>
     <!-- body components ends -->
 <div class="footer">
     <div class="social-media-buttons">
@@ -752,13 +761,13 @@
         </div>
 
         <div class="social-media-button telegram">
-            <a class="fa fa-telegram" aria-hidden="true"></a>
+            <a class="fa fa-telegram" aria-hidden="true" href="https://t.me/codebreak1"></a>
         </div>
         <div class="social-media-button instagram">
             <a class="fa fa-instagram" aria-hidden="true"></a>
         </div>
         <div class="social-media-button linkedin">
-            <a class="fa fa-linkedin" aria-hidden="true" href="https://t.me/codebreak1" ></a>
+            <a class="fa fa-linkedin" aria-hidden="true"  ></a>
         </div>
         <div class="social-media-button google-plus">
             <a class="fa fa-google-plus" aria-hidden="true"></a>
@@ -768,7 +777,78 @@
 </div>
 </div>
 </div>
+<script>
+function setupTypewriter(t) {
+        var HTML = t.innerHTML;
 
+        t.innerHTML = "";
+
+        var cursorPosition = 0,
+            tag = "",
+            writingTag = false,
+            tagOpen = false,
+            typeSpeed = 100,
+            tempTypeSpeed = 0;
+
+        var type = function () {
+
+            if (writingTag === true) {
+                tag += HTML[cursorPosition];
+            }
+
+            if (HTML[cursorPosition] === "<") {
+                tempTypeSpeed = 0;
+                if (tagOpen) {
+                    tagOpen = false;
+                    writingTag = true;
+                } else {
+                    tag = "";
+                    tagOpen = true;
+                    writingTag = true;
+                    tag += HTML[cursorPosition];
+                }
+            }
+            if (!writingTag && tagOpen) {
+                tag.innerHTML += HTML[cursorPosition];
+            }
+            if (!writingTag && !tagOpen) {
+                if (HTML[cursorPosition] === " ") {
+                    tempTypeSpeed = 0;
+                }
+                else {
+                    tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                }
+                t.innerHTML += HTML[cursorPosition];
+            }
+            if (writingTag === true && HTML[cursorPosition] === ">") {
+                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                writingTag = false;
+                if (tagOpen) {
+                    var newSpan = document.createElement("span");
+                    t.appendChild(newSpan);
+                    newSpan.innerHTML = tag;
+                    tag = newSpan.firstChild;
+                }
+            }
+
+            cursorPosition += 1;
+            if (cursorPosition < HTML.length - 1) {
+                setTimeout(type, tempTypeSpeed);
+            }
+
+        };
+
+        return {
+            type: type
+        };
+    }
+
+    var typer = document.getElementById('typewriter');
+
+    typewriter = setupTypewriter(typewriter);
+
+    typewriter.type();
+    </script>
     <script>
 
         $(".toggle").click(function (e) {
