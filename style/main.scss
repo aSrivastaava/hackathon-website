@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: "Orbitron", sans-serif;
+  background-color: #1d1d1d;
 }
 
 .welcome {
@@ -1235,7 +1236,6 @@ body {
   //padding-right: 80%;
   //padding-top: 30px;
   // width: 50%;
-  height: 90%;
   color: rgb(159, 229, 37);
   font-size: 20px;
   letter-spacing: 2px;
@@ -1244,13 +1244,21 @@ body {
 .faq-t {
   font-size: 45px;
   position: absolute;
-  top: -40px;
+  top: -5%;
+  transform: translateY(-4%);
   animation: skew 5s linear infinite;
 }
 
 .faq-boxes {
+  display: flex;
+  flex-direction: row;
   position: relative;
-  top: 10%;
+  // top: 10%;
+}
+
+.accordion1,
+accordion1 {
+  width: 50%;
 }
 
 .contact-title {
@@ -1477,7 +1485,7 @@ loader:after {
 
   .about-title {
     margin-left: -9%;
-    top: 5%;
+    // top: 5%;
   }
 
   .cBreak-about-m {
@@ -1488,8 +1496,7 @@ loader:after {
   }
   .faq-boxes {
     position: relative;
-    top: 0;
-    overflow: auto;
+    // top: 0;
   }
 }
 
@@ -1553,7 +1560,7 @@ ul {
   width: 75%;
   position: relative;
   left: 10%;
-  animation: border-flicker 2s linear infinite;
+  // animation: border-flicker 2s linear infinite;
 }
 
 ul .inner {
@@ -1591,7 +1598,7 @@ button {
 }
 
 .menu-bar {
-  position: fixed;
+  position: sticky;
   z-index: 1;
   left: 27%;
   top: 88%;
@@ -1628,12 +1635,14 @@ menu button {
   justify-content: center;
   align-items: center;
   color: #ece6ff;
-  border: 5px solid rgb(159, 229, 37);
+  border: 3px solid rgb(159, 229, 37);
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
 }
-
+.icon-hai {
+  color: rgb(159, 229, 37);
+}
 menu button span {
   transition: all 400ms cubic-bezier(0.4, 0.25, 0.3, 1.3) 100ms;
   position: absolute;
@@ -1662,7 +1671,7 @@ menu button:hover {
 }
 
 menu button:hover span:first-of-type {
-  transform: translate(-50%, -150%);
+  transform: translate(-50%, -180%);
 }
 menu button:hover span:last-of-type {
   transform: translate(-50%, -50%);
@@ -1962,7 +1971,7 @@ menu button:hover span:last-of-type {
   ul {
     list-style: none;
     padding: 0 0 0 1em;
-    z-index: 1;
+    z-index: auto;
   }
 
   li {
@@ -2282,7 +2291,7 @@ menu button:hover span:last-of-type {
   align-content: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 756px) {
   .devfolio-button {
     position: absolute;
     top: 82%;
@@ -2353,8 +2362,8 @@ menu button:hover span:last-of-type {
 
 .social-media-button {
   display: inline-flex;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border: 2px solid #fff;
   border-radius: 100%;
   position: relative;
@@ -2409,8 +2418,7 @@ menu button:hover span:last-of-type {
 
 @media screen and (min-width: 757px) {
   .message {
-    background: white;
-    color: black;
+    color: rgb(159, 229, 37);
     position: relative;
   }
 
@@ -2421,7 +2429,6 @@ menu button:hover span:last-of-type {
   }
 
   .message p {
-    background-color: white;
     font-weight: bolder;
     margin: 0;
     float: inline-start;
@@ -2446,8 +2453,7 @@ menu button:hover span:last-of-type {
 
 @media screen and (max-width: 756px) {
   .message {
-    background: white;
-    color: black;
+    color: rgb(159, 229, 37);
     position: relative;
   }
 
@@ -2458,7 +2464,6 @@ menu button:hover span:last-of-type {
   }
 
   .message p {
-    background-color: white;
     font-weight: bolder;
     margin: 0;
     float: inline-start;
@@ -2475,7 +2480,6 @@ menu button:hover span:last-of-type {
     //padding-right: 80%;
     //padding-top: 30px;
     // width: 50%;
-    height: 90%;
     color: rgb(159, 229, 37);
     font-size: 20px;
     letter-spacing: 2px;
@@ -2484,7 +2488,8 @@ menu button:hover span:last-of-type {
   .faq-t {
     font-size: 45px;
     position: absolute;
-    top: -40px;
+    top: -5%;
+    transform: translateY(-4%);
     animation: skew 5s linear infinite;
   }
 
@@ -2512,9 +2517,10 @@ menu button:hover span:last-of-type {
 .see-you-message {
   background: #131413;
   text-align: center;
+  padding: 5%;
 }
 #typewriter {
-  font-size: 2em;
+  font-size: 5em;
   margin: 0px;
   font-family: inherit;
   color: rgb(159, 229, 37);
@@ -2549,4 +2555,42 @@ menu button:hover span:last-of-type {
   100% {
     opacity: 1;
   }
+}
+
+@media screen and (max-width: 756px) {
+  .see-you-message {
+    background: #131413;
+    text-align: center;
+    padding: 5%;
+  }
+
+  #typewriter {
+    font-size: 2.5em;
+    margin: 0px;
+    font-family: inherit;
+    color: rgb(159, 229, 37);
+    &:after {
+      content: "|";
+      animation: blink 500ms linear infinite alternate;
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+// #navbar {
+//   overflow: hidden;
+//   background-color: #333;
+// }
+
+.content {
+  padding: 16px;
 }

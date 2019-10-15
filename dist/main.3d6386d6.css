@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: "Orbitron", sans-serif;
+  background-color: #1d1d1d;
 }
 
 .welcome {
@@ -1124,7 +1125,6 @@ body {
   background-color: #131413cb;
   position: relative;
   padding-bottom: 10px;
-  height: 90%;
   color: #9fe525;
   font-size: 20px;
   letter-spacing: 2px;
@@ -1133,13 +1133,20 @@ body {
 .faq-t {
   font-size: 45px;
   position: absolute;
-  top: -40px;
+  top: -5%;
+  transform: translateY(-4%);
   animation: skew 5s linear infinite;
 }
 
 .faq-boxes {
+  display: flex;
+  flex-direction: row;
   position: relative;
-  top: 10%;
+}
+
+.accordion1,
+accordion1 {
+  width: 50%;
 }
 
 .contact-title {
@@ -1341,7 +1348,6 @@ loader:after {
 
   .about-title {
     margin-left: -9%;
-    top: 5%;
   }
 
   .cBreak-about-m {
@@ -1353,8 +1359,6 @@ loader:after {
 
   .faq-boxes {
     position: relative;
-    top: 0;
-    overflow: auto;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1416,7 +1420,6 @@ ul {
   width: 75%;
   position: relative;
   left: 10%;
-  animation: border-flicker 2s linear infinite;
 }
 
 ul .inner {
@@ -1450,7 +1453,7 @@ button {
 }
 
 .menu-bar {
-  position: fixed;
+  position: sticky;
   z-index: 1;
   left: 27%;
   top: 88%;
@@ -1479,10 +1482,14 @@ menu button {
   justify-content: center;
   align-items: center;
   color: #ece6ff;
-  border: 5px solid #9fe525;
+  border: 3px solid #9fe525;
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
+}
+
+.icon-hai {
+  color: #9fe525;
 }
 
 menu button span {
@@ -1513,7 +1520,7 @@ menu button:hover {
 }
 
 menu button:hover span:first-of-type {
-  transform: translate(-50%, -150%);
+  transform: translate(-50%, -180%);
 }
 
 menu button:hover span:last-of-type {
@@ -1788,7 +1795,7 @@ menu button:hover span:last-of-type {
 .timeline ul {
   list-style: none;
   padding: 0 0 0 1em;
-  z-index: 1;
+  z-index: auto;
 }
 .timeline li {
   background: black;
@@ -2068,7 +2075,7 @@ menu button:hover span:last-of-type {
   align-content: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 756px) {
   .devfolio-button {
     position: absolute;
     top: 82%;
@@ -2132,8 +2139,8 @@ menu button:hover span:last-of-type {
 
 .social-media-button {
   display: inline-flex;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border: 2px solid #fff;
   border-radius: 100%;
   position: relative;
@@ -2188,8 +2195,7 @@ menu button:hover span:last-of-type {
 
 @media screen and (min-width: 757px) {
   .message {
-    background: white;
-    color: black;
+    color: #9fe525;
     position: relative;
   }
 
@@ -2200,7 +2206,6 @@ menu button:hover span:last-of-type {
   }
 
   .message p {
-    background-color: white;
     font-weight: bolder;
     margin: 0;
     float: inline-start;
@@ -2225,8 +2230,7 @@ menu button:hover span:last-of-type {
 }
 @media screen and (max-width: 756px) {
   .message {
-    background: white;
-    color: black;
+    color: #9fe525;
     position: relative;
   }
 
@@ -2237,7 +2241,6 @@ menu button:hover span:last-of-type {
   }
 
   .message p {
-    background-color: white;
     font-weight: bolder;
     margin: 0;
     float: inline-start;
@@ -2250,7 +2253,6 @@ menu button:hover span:last-of-type {
     background-color: #131413cb;
     position: relative;
     padding-bottom: 10px;
-    height: 90%;
     color: #9fe525;
     font-size: 20px;
     letter-spacing: 2px;
@@ -2259,7 +2261,8 @@ menu button:hover span:last-of-type {
   .faq-t {
     font-size: 45px;
     position: absolute;
-    top: -40px;
+    top: -5%;
+    transform: translateY(-4%);
     animation: skew 5s linear infinite;
   }
 
@@ -2286,10 +2289,11 @@ menu button:hover span:last-of-type {
 .see-you-message {
   background: #131413;
   text-align: center;
+  padding: 5%;
 }
 
 #typewriter {
-  font-size: 2em;
+  font-size: 5em;
   margin: 0px;
   font-family: inherit;
   color: #9fe525;
@@ -2322,6 +2326,37 @@ menu button:hover span:last-of-type {
   100% {
     opacity: 1;
   }
+}
+@media screen and (max-width: 756px) {
+  .see-you-message {
+    background: #131413;
+    text-align: center;
+    padding: 5%;
+  }
+
+  #typewriter {
+    font-size: 2.5em;
+    margin: 0px;
+    font-family: inherit;
+    color: #9fe525;
+  }
+  #typewriter:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.content {
+  padding: 16px;
 }
 
 /*# sourceMappingURL=/main.3d6386d6.css.map */

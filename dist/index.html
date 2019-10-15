@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="/main.3d6386d6.css">
     <script src="/js.00a46daa.js"></script>
     <!-- <script src="js/particle.js"></script> -->
@@ -25,59 +26,58 @@
 <!-- <div id="particles-js"></div> -->
 <div class="everything">
 
-    <div class="menu-bar">
-        <menu>
+<div class="menu-bar">
+    <menu>
         <li>
             <button onclick="window.location.href='#intro'">
                 <span>&lt;&gt;</span>
-                <span id="offset">CodeBreak</span>
+                <span id="offset noRotate">CodeBreak</span>
             </button>
         </li>
-    
+
         <li>
             <button onclick="window.location.href='#about'">
-                <span class="offset-1">i</span>
+                <span class="offset-1 icon-hai">i</span>
                 <span id="offset">about</span>
             </button>
         </li>
-    
+
         <li>
             <button onclick="window.location.href='#sponsors'">
-                <span class="offset-1">$</span>
+                <span class="offset-1 icon-hai">$</span>
                 <span id="offset">Sponsors</span>
             </button>
         </li>
-    
+
         <li>
             <button onclick="window.location.href='#prize'">
-                <span>&#127942;</span>
-                <span id="offset">Prizes</span>
+                <span class="icon-hai">&#127942;</span>
+                <span id="offset ">Prizes</span>
             </button>
         </li>
         <li>
             <button onclick="window.location.href='#faq'">
-                <span>?</span>
-                <span id="offset">FAQ</span>
+                <span class="lnr lnr-question-circle icon-hai "></span>
+                <span id="offset ">FAQ</span>
             </button>
         </li>
         <li>
             <button onclick="window.location.href='#timelineDiv'">
-                <span>&#x1F550;</span>
+                <span class="icon-hai">&#x1F550;</span>
                 <span id="offset">Timeline</span>
             </button>
         </li>
         <li>
             <button onclick="window.location.href='#contact'">
-                <span>&#128222;</span>
+                <span class="lnr lnr-phone icon-hai"></span>
                 <span id="offset">Contact</span>
             </button>
         </li>
-    
+
     </menu>
 </div>
 <!-- --------------------------Navigation Buttons END------------- -->
-
-
+    
     <div class="welcome" id="intro">
         <div class="zoom">
             <div class="top-animation">
@@ -206,6 +206,8 @@
         </div>
     </div>
    <!-- --------------------Landing Page END------------- -->
+
+<div class="content">
    
     <div class="about" id="about">
 
@@ -565,11 +567,12 @@
     <div class="faq" id="faq">
         <p class="sponsors-title faq-t" style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i class="fa fa-chevron-right a-r"></i>FAQ</p><br>
         <div class="faq-boxes">
-            <ul class="accordion">
+            <ul class="accordion1">
                 <li>
-                    <a class="toggle" href="#">Question 1</a>
+                    <a class="toggle" href="#">Who can participate?</a>
                     <p class="inner">
-                        Answer 1
+                        Everyone is welcome to apply, be it students, professionals or turing-test certified androids. If you are under 18 years
+                        of age, we’ll need a parental consent form
                     </p>
                 </li>
     
@@ -614,6 +617,58 @@
                     </p>
                 </li>
     
+            </ul>
+            <ul class="accordion2">
+                <li>
+                    <a class="toggle" href="#">Who can participate?</a>
+                    <p class="inner">
+                        Everyone is welcome to apply, be it students, professionals or turing-test certified androids. If you
+                        are under 18 years
+                        of age, we’ll need a parental consent form
+                    </p>
+                </li>
+        
+                <li>
+                    <a class="toggle" href="#">Question 2</a>
+                    <p class="inner">
+                        Answer 2
+                    </p>
+                </li>
+        
+                <li>
+                    <a class="toggle" href="#">Question 3</a>
+                    <p class="inner">
+                        Answer 3
+                    </p>
+                </li>
+        
+                <li>
+                    <a class="toggle" href="#">Question 4</a>
+                    <p class="inner">
+                        Answer 4
+                    </p>
+                </li>
+                <li>
+                    <a class="toggle" href="#">Question 5</a>
+                    <p class="inner">
+                        Answer 5
+                    </p>
+                </li>
+        
+                <li>
+                    <a class="toggle" href="#">Question 6</a>
+                    <p class="inner">
+                        Answer 6
+                    </p>
+                </li>
+        
+                <li>
+                    <a class="toggle" href="#">Question 7</a>
+                    <p class="inner">
+                        Answer 7
+                    </p>
+                </li>
+        
             </ul>
         </div>
     </div>
@@ -729,6 +784,7 @@
 </pre></div>
     <!-- body components ends -->
 <div class="footer">
+    <!-- <p>Never Miss any updates on:</p> -->
     <div class="social-media-buttons">
 
         <div class="social-media-button facebook">
@@ -737,10 +793,6 @@
 
         <div class="social-media-button twitter">
             <a class="fa fa-twitter" aria-hidden="true"></a>
-        </div>
-
-        <div class="social-media-button github">
-            <a class="fa fa-github" aria-hidden="true"></a>
         </div>
 
         <div class="social-media-button telegram">
@@ -752,13 +804,12 @@
         <div class="social-media-button linkedin">
             <a class="fa fa-linkedin" aria-hidden="true"></a>
         </div>
-        <div class="social-media-button google-plus">
-            <a class="fa fa-google-plus" aria-hidden="true"></a>
-        </div>
     </div>
     <div class="message"><p class="mess">&nbsp &lt;/&gt; with &nbsp&nbsp&nbsp&nbsp&nbsp</p><span class="fa fa-heart" style="color: red;"></span></div>
 </div>
 </div>
+</div>
+
 
 <script>function setupTypewriter(t) {
   var HTML = t.innerHTML;
