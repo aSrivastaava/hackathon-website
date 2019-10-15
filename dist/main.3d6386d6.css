@@ -39,7 +39,6 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Orbitron", sans-serif;
   line-height: 45px;
   margin: 0;
   position: relative;
@@ -653,7 +652,6 @@ body {
   width: 30vh;
   transition: color 0.1s ease-in 0.32s, width 0.2s ease-in, font-size 0.1s ease-in 0.21s;
   text-transform: uppercase;
-  font-family: "Orbitron", sans-serif;
 }
 
 .cBreak-button-icon {
@@ -1201,7 +1199,7 @@ container {
 
 .map {
   position: relative;
-  transform: translate(60%, -5%);
+  transform: translate(18vw, -1vh);
   background-color: transparent;
   animation: border-flicker 2s linear infinite;
   height: 400px;
@@ -1486,9 +1484,8 @@ button {
 .menu-bar {
   position: fixed;
   z-index: 1;
-  left: 20%;
-  top: 85%;
-  transform: translate(20%, -85%);
+  top: 85vh;
+  transform: translateX(18vw);
 }
 
 menu {
@@ -1850,7 +1847,7 @@ menu button:hover span:last-of-type {
   height: 100%;
   width: 5px;
   background: black;
-  left: 0;
+  left: 5vh;
 }
 .timeline h2 {
   background: black;
@@ -1890,31 +1887,46 @@ menu button:hover span:last-of-type {
   font-style: italic;
 }
 
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 900px) {
   .container {
     max-width: 100px;
     margin: 0 auto;
   }
 
   .timeline:before {
-    left: 50.5vmax;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: black;
+    left: 50vmax;
+  }
+  .timeline h2 {
+    background: black;
+    max-width: 6em;
+    margin: 0 auto 1em;
+    margin-top: 5%;
+    padding: 0.5em;
+    text-align: center;
+    position: relative;
+    clear: both;
   }
   .timeline ul {
     padding-left: 0;
-    max-width: 700px;
-    margin: 10 auto;
+    max-width: 100vmax;
   }
   .timeline li {
     animation: border-flicker 2s linear infinite;
-    width: 44vmin;
-    left: -17vmin;
+    width: 25vmax;
   }
   .timeline li:nth-child(even) {
     float: right;
     margin-top: 2em;
+    right: 4vw;
   }
   .timeline li:nth-child(odd) {
     float: left;
+    left: 11vmax;
   }
   .timeline li:nth-child(odd):before {
     border-top: 1em solid black;
@@ -1926,7 +1938,7 @@ menu button:hover span:last-of-type {
     clear: both;
   }
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 900px) {
   .contact-me {
     background-color: #131413;
     position: relative;
@@ -1945,7 +1957,7 @@ menu button:hover span:last-of-type {
     animation: border-flicker 2s linear infinite;
     height: 300px;
     width: 320px;
-    transform: translateX(10%);
+    transform: translateX(8vw);
   }
 
   .card {
@@ -1954,7 +1966,7 @@ menu button:hover span:last-of-type {
     position: relative;
     width: 280px;
     height: 100%;
-    transform: translate(14%, -60%);
+    transform: translate(10vw, -15vh);
     backface-visibility: hidden;
     box-shadow: 0 0 5px #9fe525;
     background-color: transparent;
@@ -2043,14 +2055,13 @@ menu button:hover span:last-of-type {
   .menu-bar {
     position: fixed;
     z-index: 1;
-    left: 3%;
-    top: 94%;
+    top: 95vh;
+    left: -15vw;
   }
 
   menu {
     display: flex;
     position: absolute;
-    transform: translateY(-50%);
     list-style: none;
   }
 
@@ -2059,11 +2070,10 @@ menu button:hover span:last-of-type {
     width: 40px;
     height: 40px;
     position: absolute;
-    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ece6ff;
+    color: #9fe525;
     border: 2px solid #9fe525;
     border-radius: 50%;
     cursor: pointer;
@@ -2230,7 +2240,7 @@ menu button:hover span:last-of-type {
   overflow: hidden;
   border-radius: 100%;
   position: relative;
-  left: 46vh;
+  left: 40vh;
   margin: 1rem 0.5rem;
   cursor: pointer;
   transition: border-radius 0.25s, transform 0.5s, border-color 1s;
@@ -2239,7 +2249,6 @@ menu button:hover span:last-of-type {
 .social-media-button a {
   color: #fff;
   font-size: 2rem;
-  font-family: "Orbitron", sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2273,14 +2282,6 @@ menu button:hover span:last-of-type {
   color: #0074b2;
 }
 
-.social-media-button.github:hover a {
-  color: #6e5494;
-}
-
-.social-media-button.google-plus:hover a {
-  color: #cd4030;
-}
-
 @media screen and (min-width: 757px) {
   .message {
     font-family: "Orbitron", sans-serif;
@@ -2291,7 +2292,7 @@ menu button:hover span:last-of-type {
   .message span {
     position: absolute;
     top: 8vh;
-    left: 53%;
+    left: 55vw;
   }
 
   .message p {
@@ -2302,7 +2303,7 @@ menu button:hover span:last-of-type {
     letter-spacing: 5px;
     word-spacing: 5px;
     top: 8vh;
-    left: 42.5%;
+    left: 40vw;
   }
 
   .sponsor-message {
@@ -2421,7 +2422,7 @@ menu button:hover span:last-of-type {
   .message span {
     position: absolute;
     top: 1vh;
-    left: 55%;
+    left: 65vw;
   }
 
   .message p {
@@ -2430,7 +2431,7 @@ menu button:hover span:last-of-type {
     float: inline-start;
     position: absolute;
     top: 1vh;
-    left: 35.6%;
+    left: 30vw;
   }
 
   .faq-t {
