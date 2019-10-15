@@ -6,7 +6,7 @@ body {
 }
 
 .welcome {
-  padding-bottom: 8%;
+  height: 100%;
   text-align: center;
   position: relative;
   background-color: #131413;
@@ -1156,7 +1156,6 @@ body {
   background-color: #131413cb;
   position: relative;
   padding-bottom: 10px;
-  height: 90%;
   color: #9fe525;
   font-size: 20px;
   letter-spacing: 2px;
@@ -1167,11 +1166,6 @@ body {
   position: absolute;
   top: 40px;
   left: -20px;
-}
-
-.faq-boxes {
-  position: relative;
-  top: 10%;
 }
 
 .contact-title {
@@ -1447,10 +1441,10 @@ ul {
   width: 75%;
   position: relative;
   left: 10%;
-  animation: border-flicker 2s linear infinite;
 }
 
 ul .inner {
+  color: white;
   padding-left: 1em;
   overflow: hidden;
   display: none;
@@ -1464,7 +1458,7 @@ ul li a.toggle {
   width: 100%;
   display: block;
   background: rgba(0, 0, 0, 0.78);
-  color: #fefefe;
+  color: #9fe525;
   padding: 0.75em;
   border-radius: 0.15em;
   transition: background 0.3s ease;
@@ -1510,8 +1504,7 @@ menu button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ece6ff;
-  border: 5px solid #9fe525;
+  color: #9fe525;
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
@@ -1545,7 +1538,7 @@ menu button:hover {
 }
 
 menu button:hover span:first-of-type {
-  transform: translate(-50%, -150%);
+  transform: translate(-50%, -190%);
 }
 
 menu button:hover span:last-of-type {
@@ -2127,9 +2120,32 @@ menu button:hover span:last-of-type {
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
-  text-transform: lowercase;
+  position: relative;
+  left: -15%;
 }
 
+@media screen and (max-width: 756px) {
+  #devfolio-apply-now {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #3770ff;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+    position: relative;
+    left: 0%;
+  }
+}
 #devfolio-apply-now:not([disabled]) {
   cursor: pointer;
 }
@@ -2341,6 +2357,15 @@ menu button:hover span:last-of-type {
   .phone {
     display: none;
   }
+
+  .faq-boxes {
+    display: inline-flex;
+    width: 80%;
+  }
+
+  .accordion1 {
+    margin-right: 51px;
+  }
 }
 @media screen and (max-width: 756px) {
   .pc {
@@ -2395,16 +2420,6 @@ menu button:hover span:last-of-type {
     position: absolute;
     top: 1vh;
     left: 35.6%;
-  }
-
-  .faq {
-    background-color: #131413cb;
-    position: relative;
-    padding-bottom: 10px;
-    height: 90%;
-    color: #9fe525;
-    font-size: 20px;
-    letter-spacing: 2px;
   }
 
   .faq-t {

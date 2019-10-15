@@ -7,7 +7,7 @@ body {
 }
 
 .welcome {
-  padding-bottom: 8%;
+  height: 100%;
   text-align: center;
   position: relative;
   background-color: #131413;
@@ -1207,23 +1207,13 @@ body {
 
 .contact-me {
   background-color: #131413;
-  // text-align: center;
   position: relative;
-  // padding-bottom: 10px;
-  //padding-right: 80%;
   padding-top: 30px;
-  //width: 50%;
 }
 
 .timelineDiv {
   background-color: rgb(29, 29, 29);
-  //text-align: center;
   position: relative;
-  //padding-bottom: 10px;
-  //padding-right: 80%;
-  //padding-top: 30px;
-  // width: 50%;
-  //height: 90%;
   color: rgb(159, 229, 37);
   font-size: 20px;
   letter-spacing: 2px;
@@ -1238,13 +1228,8 @@ body {
 
 .faq {
   background-color: #131413cb;
-  //text-align: center;
   position: relative;
   padding-bottom: 10px;
-  //padding-right: 80%;
-  //padding-top: 30px;
-  // width: 50%;
-  height: 90%;
   color: rgb(159, 229, 37);
   font-size: 20px;
   letter-spacing: 2px;
@@ -1256,11 +1241,6 @@ body {
   top: 40px;
   left: -20px;
   // animation: skew 5s linear infinite;
-}
-
-.faq-boxes {
-  position: relative;
-  top: 10%;
 }
 
 .contact-title {
@@ -1563,10 +1543,11 @@ ul {
   width: 75%;
   position: relative;
   left: 10%;
-  animation: border-flicker 2s linear infinite;
+  // animation: border-flicker 2s linear infinite;
 }
 
 ul .inner {
+  color: white;
   padding-left: 1em;
   overflow: hidden;
   display: none;
@@ -1582,7 +1563,7 @@ ul li a.toggle {
   width: 100%;
   display: block;
   background: rgba(0, 0, 0, 0.78);
-  color: #fefefe;
+  color: rgb(159, 229, 37);
   padding: 0.75em;
   border-radius: 0.15em;
   transition: background 0.3s ease;
@@ -1638,8 +1619,8 @@ menu button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ece6ff;
-  border: 5px solid rgb(159, 229, 37);
+  color: rgb(159, 229, 37);
+  // border: 2px solid rgb(159, 229, 37);
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
@@ -1673,7 +1654,7 @@ menu button:hover {
 }
 
 menu button:hover span:first-of-type {
-  transform: translate(-50%, -150%);
+  transform: translate(-50%, -190%);
 }
 menu button:hover span:last-of-type {
   transform: translate(-50%, -50%);
@@ -2322,9 +2303,34 @@ menu button:hover span:last-of-type {
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
-  text-transform: lowercase;
-  // position: relative;
-  // left: 45%;
+  // text-transform: lowercase;
+  position: relative;
+  left: -15%;
+}
+
+@media screen and (max-width: 756px) {
+  #devfolio-apply-now {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #3770ff;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+    // text-transform: lowercase;
+    position: relative;
+    left: 0%;
+  }
 }
 
 #devfolio-apply-now:not([disabled]) {
@@ -2546,6 +2552,14 @@ menu button:hover span:last-of-type {
   .phone {
     display: none;
   }
+  .faq-boxes {
+    display: inline-flex;
+    width: 80%;
+  }
+
+  .accordion1 {
+    margin-right: 51px;
+  }
 }
 @media screen and (max-width: 756px) {
   .pc {
@@ -2598,21 +2612,6 @@ menu button:hover span:last-of-type {
     top: 1vh;
     left: 35.6%;
   }
-
-  .faq {
-    background-color: #131413cb;
-    //text-align: center;
-    position: relative;
-    padding-bottom: 10px;
-    //padding-right: 80%;
-    //padding-top: 30px;
-    // width: 50%;
-    height: 90%;
-    color: rgb(159, 229, 37);
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-
   .faq-t {
     font-size: 45px;
     position: absolute;
