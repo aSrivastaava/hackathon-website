@@ -1253,11 +1253,6 @@ body {
   top: 10%;
 }
 
-// .together {
-//   display: flex;
-//   flex-direction: row;
-// }
-
 .contact-title {
   margin: 0px 0px 0px 15px;
   font-size: 40px;
@@ -1291,6 +1286,12 @@ container {
   width: 500px;
 }
 
+.socialHandler {
+  background: rgb(67, 67, 67);
+  width: 203.5vh;
+  height: 100px;
+}
+
 loader {
   display: block;
   position: relative;
@@ -1300,7 +1301,8 @@ loader {
   font-size: 18px;
   line-height: 40px;
   background-color: #fff;
-  position: relative;
+  left: 90vh;
+  top: 12vh;
 }
 loader:after {
   position: absolute;
@@ -2033,7 +2035,7 @@ menu button:hover span:last-of-type {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 756px) {
   .contact-me {
     background-color: #131413;
     // text-align: center;
@@ -2279,5 +2281,197 @@ menu button:hover span:last-of-type {
     top: 82%;
     left: 25%;
     align-content: center;
+  }
+
+  .socialHandler {
+    position: relative;
+    top: 25vh;
+    background: rgb(67, 67, 67);
+    width: 425px;
+    height: 100px;
+  }
+
+  loader {
+    display: block;
+    position: relative;
+    height: 40px;
+    min-width: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: #fff;
+    top: 0vh;
+    left: 10vh;
+  }
+  loader:after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#8426af),
+      color-stop(#ff5770),
+      to(#6501de)
+    );
+    background: linear-gradient(to left, #05e736, #8aff7f, rgb(159, 229, 37));
+    background-size: 200% 200%;
+    -webkit-animation: animateGlow 1s linear infinite;
+    animation: animateGlow 1s linear infinite;
+  }
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 65px;
+  position: relative;
+}
+.social-media-buttons {
+  background-color: black;
+  text-align: center;
+  //  margin: 4rem 0;
+}
+
+.social-media-button {
+  display: inline-flex;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  position: relative;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  transition: border-radius 0.25s, transform 0.5s, border-color 1s;
+}
+
+.social-media-button a {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 0.5s;
+}
+
+.social-media-button:hover {
+  border-radius: 10%;
+  border-color: #fff;
+  transform: rotate(360deg);
+}
+
+.social-media-button.facebook:hover a {
+  color: #3b5998;
+}
+
+.social-media-button.twitter:hover a {
+  color: rgb(41, 165, 218);
+}
+
+.social-media-button.telegram:hover a {
+  color: rgb(94, 163, 216);
+}
+
+.social-media-button.instagram:hover a {
+  color: rgb(193, 0, 138);
+}
+
+.social-media-button.linkedin:hover a {
+  color: rgb(0, 116, 178);
+}
+
+.social-media-button.github:hover a {
+  color: #6e5494;
+}
+
+.social-media-button.google-plus:hover a {
+  color: rgb(205, 64, 48);
+}
+
+@media screen and (min-width: 757px) {
+  .message {
+    background: white;
+    color: black;
+    position: relative;
+  }
+
+  .message span {
+    position: absolute;
+    top: 8vh;
+    left: 53%;
+  }
+
+  .message p {
+    background-color: white;
+    font-weight: bolder;
+    margin: 0;
+    float: inline-start;
+    position: absolute;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    top: 8vh;
+    left: 44.5%;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .message {
+    background: white;
+    color: black;
+    position: relative;
+  }
+
+  .message span {
+    position: absolute;
+    top: 9vh;
+    left: 55%;
+  }
+
+  .message p {
+    background-color: white;
+    font-weight: bolder;
+    margin: 0;
+    float: inline-start;
+    position: absolute;
+    top: 9vh;
+    left: 35.6%;
+  }
+
+  .faq {
+    background-color: #131413cb;
+    //text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    //padding-right: 80%;
+    //padding-top: 30px;
+    // width: 50%;
+    height: 90%;
+    color: rgb(159, 229, 37);
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .faq-t {
+    font-size: 45px;
+    position: absolute;
+    top: -40px;
+    animation: skew 5s linear infinite;
+  }
+
+  .faq-boxes {
+    position: relative;
+    top: 10%;
   }
 }
