@@ -1161,16 +1161,23 @@ container {
 .together {
   display: flex;
   flex-direction: row;
+  align-content: center;
 }
 
 .map {
   margin-bottom: 5vh;
   position: relative;
-  left: 30%;
+  transform: translateX(80%);
   background-color: transparent;
   animation: border-flicker 2s linear infinite;
-  height: 500px;
-  width: 500px;
+  height: 550px;
+  width: 550px;
+}
+
+.socialHandler {
+  background: #434343;
+  width: 203.5vh;
+  height: 100px;
 }
 
 loader {
@@ -1182,7 +1189,8 @@ loader {
   font-size: 18px;
   line-height: 40px;
   background-color: #fff;
-  position: relative;
+  left: 90vh;
+  top: 12vh;
 }
 
 loader:after {
@@ -1671,9 +1679,9 @@ menu button:hover span:last-of-type {
   border-radius: 5px;
   position: relative;
   top: 10vh;
-  left: 10%;
-  width: 400px;
-  height: 200px;
+  transform: translateX(40%);
+  width: 500px;
+  height: 250px;
   backface-visibility: hidden;
   box-shadow: 0 0 5px #9fe525;
   background-color: transparent;
@@ -1693,8 +1701,12 @@ menu button:hover span:last-of-type {
   top: 15%;
   text-align: center;
 }
+.card h1 {
+  font-size: 39px;
+}
 .card p {
   display: block;
+  font-size: 22px;
 }
 .card a {
   color: #69c6b8;
@@ -1801,7 +1813,7 @@ menu button:hover span:last-of-type {
   font-style: italic;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 890px) {
   .container {
     max-width: 100px;
     margin: 0 auto;
@@ -1809,6 +1821,7 @@ menu button:hover span:last-of-type {
 
   .timeline:before {
     left: 50%;
+    transform: translateX(50%);
   }
   .timeline ul {
     padding-left: 0;
@@ -1818,7 +1831,7 @@ menu button:hover span:last-of-type {
   .timeline li {
     animation: border-flicker 2s linear infinite;
     width: 42%;
-    left: -25%;
+    transform: translateX(-52%);
   }
   .timeline li:nth-child(even) {
     float: right;
@@ -1837,7 +1850,7 @@ menu button:hover span:last-of-type {
     clear: both;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 890px) {
   .contact-me {
     background-color: #131413;
     position: relative;
@@ -1856,15 +1869,16 @@ menu button:hover span:last-of-type {
     animation: border-flicker 2s linear infinite;
     height: 300px;
     width: 320px;
-    margin-left: -20%;
+    transform: translateX(18%);
   }
 
   .card {
     pointer-events: none;
     color: white;
     position: relative;
-    width: 250px;
+    width: 280px;
     height: 100%;
+    transform: translateX(14%);
     backface-visibility: hidden;
     box-shadow: 0 0 5px #9fe525;
     background-color: transparent;
@@ -1883,8 +1897,12 @@ menu button:hover span:last-of-type {
     position: relative;
     text-align: center;
   }
+  .card h1 {
+    font-size: 21px;
+  }
   .card p {
     display: inline;
+    font-size: 16px;
   }
   .card a {
     color: #69c6b8;
@@ -1895,7 +1913,7 @@ menu button:hover span:last-of-type {
     position: relative;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .t-glitch:before,
@@ -2056,6 +2074,253 @@ menu button:hover span:last-of-type {
     top: 82%;
     left: 25%;
     align-content: center;
+  }
+
+  .socialHandler {
+    position: relative;
+    top: 25vh;
+    background: #434343;
+    width: 425px;
+    height: 100px;
+  }
+
+  loader {
+    display: block;
+    position: relative;
+    height: 40px;
+    min-width: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: #fff;
+    top: 0vh;
+    left: 10vh;
+  }
+
+  loader:after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
+    background: -webkit-gradient(linear, right top, left top, from(#8426af), color-stop(#ff5770), to(#6501de));
+    background: linear-gradient(to left, #05e736, #8aff7f, #9fe525);
+    background-size: 200% 200%;
+    -webkit-animation: animateGlow 1s linear infinite;
+    animation: animateGlow 1s linear infinite;
+  }
+}
+.footer {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 65px;
+  position: relative;
+}
+
+.social-media-buttons {
+  background-color: black;
+  text-align: center;
+}
+
+.social-media-button {
+  display: inline-flex;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  position: relative;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  transition: border-radius 0.25s, transform 0.5s, border-color 1s;
+}
+
+.social-media-button a {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 0.5s;
+}
+
+.social-media-button:hover {
+  border-radius: 10%;
+  border-color: #fff;
+  transform: rotate(360deg);
+}
+
+.social-media-button.facebook:hover a {
+  color: #3b5998;
+}
+
+.social-media-button.twitter:hover a {
+  color: #29a5da;
+}
+
+.social-media-button.telegram:hover a {
+  color: #5ea3d8;
+}
+
+.social-media-button.instagram:hover a {
+  color: #c1008a;
+}
+
+.social-media-button.linkedin:hover a {
+  color: #0074b2;
+}
+
+.social-media-button.github:hover a {
+  color: #6e5494;
+}
+
+.social-media-button.google-plus:hover a {
+  color: #cd4030;
+}
+
+@media screen and (min-width: 757px) {
+  .message {
+    background: white;
+    color: black;
+    position: relative;
+  }
+
+  .message span {
+    position: absolute;
+    top: 8vh;
+    left: 53%;
+  }
+
+  .message p {
+    background-color: white;
+    font-weight: bolder;
+    margin: 0;
+    float: inline-start;
+    position: absolute;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    top: 8vh;
+    left: 44.5%;
+  }
+
+  .sponsor-message {
+    color: #9fe525;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 25px;
+  }
+
+  .sponsor-message a {
+    color: white;
+    margin: 25px 10px;
+  }
+}
+@media screen and (max-width: 756px) {
+  .message {
+    background: white;
+    color: black;
+    position: relative;
+  }
+
+  .message span {
+    position: absolute;
+    top: 9vh;
+    left: 55%;
+  }
+
+  .message p {
+    background-color: white;
+    font-weight: bolder;
+    margin: 0;
+    float: inline-start;
+    position: absolute;
+    top: 9vh;
+    left: 35.6%;
+  }
+
+  .faq {
+    background-color: #131413cb;
+    position: relative;
+    padding-bottom: 10px;
+    height: 90%;
+    color: #9fe525;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .faq-t {
+    font-size: 45px;
+    position: absolute;
+    top: -40px;
+    animation: skew 5s linear infinite;
+  }
+
+  .faq-boxes {
+    position: relative;
+    top: 10%;
+  }
+
+  .sponsor-message {
+    color: #9fe525;
+    font-size: 20px;
+  }
+
+  .sponsor-message p {
+    margin: 10px;
+  }
+
+  .sponsor-message a {
+    color: white;
+    margin: 0px 10px;
+  }
+}
+/*.......................Typewriter................*/
+.see-you-message {
+  background: #131413;
+  text-align: center;
+}
+
+#typewriter {
+  font-size: 2em;
+  margin: 0px;
+  font-family: inherit;
+  color: #9fe525;
+}
+#typewriter:after {
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
