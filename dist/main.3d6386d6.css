@@ -39,6 +39,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: 400;
+  font-family: "Orbitron", sans-serif;
   line-height: 45px;
   margin: 0;
   position: relative;
@@ -874,6 +875,7 @@ body {
 
 .sponsor-title {
   background-color: black;
+  font-family: "Orbitron", sans-serif;
   color: #9fe525;
   display: inline-block;
   padding: 2px 5px;
@@ -936,6 +938,7 @@ body {
 
 .sponsors-title {
   color: #9fe525;
+  font-family: "Orbitron", sans-serif;
   font-size: 40px;
   margin: 0;
   margin-bottom: 30px;
@@ -945,6 +948,7 @@ body {
 
 .prizes-title {
   color: #9fe525;
+  font-family: "Orbitron", sans-serif;
   font-size: 40px;
   margin: 0;
   margin-bottom: 30px;
@@ -966,11 +970,13 @@ body {
   position: absolute;
   top: 30%;
   left: -10%;
+  font-family: "Orbitron", sans-serif;
 }
 
 .contact-t {
   font-size: 40px;
   position: absolute;
+  font-family: "Orbitron", sans-serif;
   top: -80px;
   animation: skew 5s linear infinite;
 }
@@ -1140,6 +1146,7 @@ body {
 .timelineDiv {
   background-color: #1d1d1d;
   position: relative;
+  font-family: "Orbitron", sans-serif;
   color: #9fe525;
   font-size: 20px;
   letter-spacing: 2px;
@@ -1147,6 +1154,7 @@ body {
 
 .timelineDiv-t {
   font-size: 44px;
+  font-family: "Orbitron", sans-serif;
   position: absolute;
   top: -40px;
   animation: skew 5s linear infinite;
@@ -1154,6 +1162,7 @@ body {
 
 .faq {
   background-color: #131413cb;
+  font-family: "Orbitron", sans-serif;
   position: relative;
   padding-bottom: 10px;
   color: #9fe525;
@@ -1888,8 +1897,7 @@ menu button:hover span:last-of-type {
   }
 
   .timeline:before {
-    left: 50%;
-    transform: translateX(50%);
+    left: 50.5vmax;
   }
   .timeline ul {
     padding-left: 0;
@@ -1898,9 +1906,8 @@ menu button:hover span:last-of-type {
   }
   .timeline li {
     animation: border-flicker 2s linear infinite;
-    width: 42%;
-    left: -12%;
-    transform: translateX(-13%);
+    width: 44vmin;
+    left: -17vmin;
   }
   .timeline li:nth-child(even) {
     float: right;
@@ -2232,6 +2239,7 @@ menu button:hover span:last-of-type {
 .social-media-button a {
   color: #fff;
   font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2275,6 +2283,7 @@ menu button:hover span:last-of-type {
 
 @media screen and (min-width: 757px) {
   .message {
+    font-family: "Orbitron", sans-serif;
     color: white;
     position: relative;
   }
@@ -2310,6 +2319,7 @@ menu button:hover span:last-of-type {
 }
 /*.......................Typewriter................*/
 .see-you-message {
+  font-family: "Orbitron", sans-serif;
   background: #131413;
   text-align: center;
 }
@@ -2350,6 +2360,7 @@ menu button:hover span:last-of-type {
   }
 }
 .map-and-socialMedia {
+  font-family: "Orbitron", sans-serif;
   display: inline-flex;
 }
 

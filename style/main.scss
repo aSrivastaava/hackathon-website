@@ -43,6 +43,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: 400;
+  font-family: "Orbitron", sans-serif;
   line-height: 45px;
   margin: 0;
   //  max-width: 160px;
@@ -941,6 +942,7 @@ body {
 
 .sponsor-title {
   background-color: black;
+  font-family: "Orbitron", sans-serif;
   color: rgb(159, 229, 37);
   display: inline-block;
   padding: 2px 5px;
@@ -1004,6 +1006,7 @@ body {
 
 .sponsors-title {
   color: rgb(159, 229, 37);
+  font-family: "Orbitron", sans-serif;
   font-size: 40px;
   margin: 0;
   margin-bottom: 30px;
@@ -1013,6 +1016,7 @@ body {
 
 .prizes-title {
   color: rgb(159, 229, 37);
+  font-family: "Orbitron", sans-serif;
   font-size: 40px;
   margin: 0;
   margin-bottom: 30px;
@@ -1034,11 +1038,13 @@ body {
   position: absolute;
   top: 30%;
   left: -10%;
+  font-family: "Orbitron", sans-serif;
   // animation: skew 5s linear infinite;
 }
 .contact-t {
   font-size: 40px;
   position: absolute;
+  font-family: "Orbitron", sans-serif;
   top: -80px;
   animation: skew 5s linear infinite;
 }
@@ -1214,6 +1220,7 @@ body {
 .timelineDiv {
   background-color: rgb(29, 29, 29);
   position: relative;
+  font-family: "Orbitron", sans-serif;
   color: rgb(159, 229, 37);
   font-size: 20px;
   letter-spacing: 2px;
@@ -1221,6 +1228,7 @@ body {
 
 .timelineDiv-t {
   font-size: 44px;
+  font-family: "Orbitron", sans-serif;
   position: absolute;
   top: -40px;
   animation: skew 5s linear infinite;
@@ -1228,6 +1236,7 @@ body {
 
 .faq {
   background-color: #131413cb;
+  font-family: "Orbitron", sans-serif;
   position: relative;
   padding-bottom: 10px;
   color: rgb(159, 229, 37);
@@ -2032,7 +2041,7 @@ menu button:hover span:last-of-type {
   }
 }
 
-@media screen and (min-width: 890px) {
+@media screen and (min-width: ) {
   .container {
     max-width: 100px;
     margin: 0 auto;
@@ -2040,8 +2049,8 @@ menu button:hover span:last-of-type {
 
   .timeline {
     &:before {
-      left: 50%;
-      transform: translateX(50%);
+      left: 50.5vmax;
+      // transform: translateX(50%);
       //margin-top: 50%;
     }
 
@@ -2053,9 +2062,9 @@ menu button:hover span:last-of-type {
 
     li {
       animation: border-flicker 2s linear infinite;
-      width: 42%;
-      left: -12%;
-      transform: translateX(-13%);
+      width: 44vmin;
+      left: -17vmin;
+      // transform: translateX(-13%);
     }
 
     li:nth-child(even) {
@@ -2426,6 +2435,7 @@ menu button:hover span:last-of-type {
 .social-media-button a {
   color: #fff;
   font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2469,6 +2479,7 @@ menu button:hover span:last-of-type {
 
 @media screen and (min-width: 757px) {
   .message {
+    font-family: "Orbitron", sans-serif;
     color: white;
     position: relative;
   }
@@ -2504,6 +2515,7 @@ menu button:hover span:last-of-type {
 
 /*.......................Typewriter................*/
 .see-you-message {
+  font-family: "Orbitron", sans-serif;
   background: #131413;
   text-align: center;
 }
@@ -2546,6 +2558,7 @@ menu button:hover span:last-of-type {
 }
 
 .map-and-socialMedia {
+  font-family: "Orbitron", sans-serif;
   display: inline-flex;
 }
 @media screen and (min-width: 757px) {
