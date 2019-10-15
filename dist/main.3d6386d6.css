@@ -1900,7 +1900,7 @@ menu button:hover span:last-of-type {
     animation: border-flicker 2s linear infinite;
     width: 42%;
     left: -12%;
-    transform: translateX(-13%);
+    transform: translateX(-26%);
   }
   .timeline li:nth-child(even) {
     float: right;
