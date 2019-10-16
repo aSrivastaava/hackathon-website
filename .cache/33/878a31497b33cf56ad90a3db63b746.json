@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-{"id":"Final LOGO-06.png","dependencies":[{"name":"/home/kunj/Kunj/git/hackathon-website/package.json","includedInParent":true,"mtime":1571199839387}],"generated":{"js":"module.exports = \"/103e46724a86ed05e4be20b42fccb9c9.png\";"},"sourceMaps":null,"error":null,"hash":"15eed5ec0d2fab2a4f703f919c288e7b","cacheData":{"env":{}}}
-=======
-<<<<<<< HEAD
-{"id":"Final LOGO-06.png","dependencies":[{"name":"/home/kunj/Kunj/git/hackathon-website/package.json","includedInParent":true,"mtime":1571165802075}],"generated":{"js":"module.exports = \"/103e46724a86ed05e4be20b42fccb9c9.png\";"},"sourceMaps":null,"error":null,"hash":"15eed5ec0d2fab2a4f703f919c288e7b","cacheData":{"env":{}}}
-=======
-{"id":"Final LOGO-06.png","dependencies":[{"name":"/home/kunj/Kunj/git/hackathon-website/package.json","includedInParent":true,"mtime":1571171466391}],"generated":{"js":"module.exports = \"/103e46724a86ed05e4be20b42fccb9c9.png\";"},"sourceMaps":null,"error":null,"hash":"15eed5ec0d2fab2a4f703f919c288e7b","cacheData":{"env":{}}}
->>>>>>> 9a6dabcc190391a85a128c7455056688b1209c91
->>>>>>> ba7edeec0948e0a1b5fda9866d4415d39bc3fc5f
+{"id":"Final LOGO-06.png","dependencies":[{"name":"/home/kunj/Kunj/git/hackathon-website/package.json","includedInParent":true,"mtime":1571200237042}],"generated":{"js":"module.exports = \"/103e46724a86ed05e4be20b42fccb9c9.png\";"},"sourceMaps":null,"error":null,"hash":"15eed5ec0d2fab2a4f703f919c288e7b","cacheData":{"env":{}}}
