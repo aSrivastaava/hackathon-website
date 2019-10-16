@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 {"id":"images/devfolio-icon.jpg","dependencies":[{"name":"/home/kunj/Kunj/git/hackathon-website/package.json","includedInParent":true,"mtime":1571199839387}],"generated":{"js":"module.exports = \"/3d917a2362fba8ea468008c1a5fb3ae3.jpg\";"},"sourceMaps":null,"error":null,"hash":"80311dcfa0ed87ffe1d7b6aeacfc92c6","cacheData":{"env":{}}}
+=======
+<<<<<<< HEAD
+{"id":"images/devfolio-icon.jpg","dependencies":[{"name":"/home/kunj/Kunj/git/hackathon-website/package.json","includedInParent":true,"mtime":1571165802075}],"generated":{"js":"module.exports = \"/3d917a2362fba8ea468008c1a5fb3ae3.jpg\";"},"sourceMaps":null,"error":null,"hash":"80311dcfa0ed87ffe1d7b6aeacfc92c6","cacheData":{"env":{}}}
+=======
+{"id":"images/devfolio-icon.jpg","dependencies":[{"name":"/home/kunj/Kunj/git/hackathon-website/package.json","includedInParent":true,"mtime":1571171466391}],"generated":{"js":"module.exports = \"/3d917a2362fba8ea468008c1a5fb3ae3.jpg\";"},"sourceMaps":null,"error":null,"hash":"80311dcfa0ed87ffe1d7b6aeacfc92c6","cacheData":{"env":{}}}
+>>>>>>> 9a6dabcc190391a85a128c7455056688b1209c91
+>>>>>>> ba7edeec0948e0a1b5fda9866d4415d39bc3fc5f

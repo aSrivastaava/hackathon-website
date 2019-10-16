@@ -710,7 +710,6 @@ body {
     font-size 0.1s ease-in 0.21s;
   text-transform: uppercase;
   //text-align: center;
-  font-family: "Orbitron", sans-serif;
 }
 // .cBreak-button:p {
 //   padding: 0 15px 0 25px;
@@ -941,6 +940,7 @@ body {
 
 .sponsor-title {
   background-color: black;
+  font-family: "Orbitron", sans-serif;
   color: rgb(159, 229, 37);
   display: inline-block;
   padding: 2px 5px;
@@ -1004,6 +1004,7 @@ body {
 
 .sponsors-title {
   color: rgb(159, 229, 37);
+  font-family: "Orbitron", sans-serif;
   font-size: 40px;
   margin: 0;
   margin-bottom: 30px;
@@ -1013,6 +1014,7 @@ body {
 
 .prizes-title {
   color: rgb(159, 229, 37);
+  font-family: "Orbitron", sans-serif;
   font-size: 40px;
   margin: 0;
   margin-bottom: 30px;
@@ -1034,11 +1036,13 @@ body {
   position: absolute;
   top: 30%;
   left: -10%;
+  font-family: "Orbitron", sans-serif;
   // animation: skew 5s linear infinite;
 }
 .contact-t {
   font-size: 40px;
   position: absolute;
+  font-family: "Orbitron", sans-serif;
   top: -80px;
   animation: skew 5s linear infinite;
 }
@@ -1214,6 +1218,7 @@ body {
 .timelineDiv {
   background-color: rgb(29, 29, 29);
   position: relative;
+  font-family: "Orbitron", sans-serif;
   color: rgb(159, 229, 37);
   font-size: 20px;
   letter-spacing: 2px;
@@ -1221,6 +1226,7 @@ body {
 
 .timelineDiv-t {
   font-size: 44px;
+  font-family: "Orbitron", sans-serif;
   position: absolute;
   top: -40px;
   animation: skew 5s linear infinite;
@@ -1228,6 +1234,7 @@ body {
 
 .faq {
   background-color: #131413cb;
+  font-family: "Orbitron", sans-serif;
   position: relative;
   padding-bottom: 10px;
   color: rgb(159, 229, 37);
@@ -1268,7 +1275,7 @@ container {
   // margin-bottom: 5vh;
   position: relative;
   //left: 10%;
-  transform: translate(60%, -5%);
+  transform: translate(18vw, -1vh);
   //  padding-left: 20%;
   background-color: transparent;
   // animation: flick 1s ease 1s, a 5s linear 1s infinite;
@@ -1584,9 +1591,8 @@ button {
 .menu-bar {
   position: fixed;
   z-index: 1;
-  left: 20%;
-  top: 85%;
-  transform: translate(20%, -85%);
+  top: 85vh;
+  transform: translateX(18vw);
   // justify-content: center;
 }
 
@@ -1985,7 +1991,7 @@ menu button:hover span:last-of-type {
     height: 100%;
     width: 5px;
     background: black;
-    left: 0;
+    left: 5vh;
   }
 
   h2 {
@@ -2031,40 +2037,51 @@ menu button:hover span:last-of-type {
     font-style: italic;
   }
 }
-
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 900px) {
   .container {
     max-width: 100px;
     margin: 0 auto;
   }
-
   .timeline {
     &:before {
-      left: 50%;
-      transform: translateX(50%);
-      //margin-top: 50%;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 5px;
+      background: black;
+      left: 50vmax;
+    }
+
+    h2 {
+      background: black;
+      max-width: 6em;
+      margin: 0 auto 1em;
+      margin-top: 5%;
+      padding: 0.5em;
+      text-align: center;
+      position: relative;
+      clear: both;
     }
 
     ul {
       padding-left: 0;
-      max-width: 700px;
-      margin: 10 auto;
+      max-width: 100vmax;
     }
 
     li {
       animation: border-flicker 2s linear infinite;
-      width: 42%;
-      left: -12%;
-      transform: translateX(-26%);
+      width: 25vmax;
     }
 
     li:nth-child(even) {
       float: right;
       margin-top: 2em;
+      right: 4vw;
     }
 
     li:nth-child(odd) {
       float: left;
+      left: 11vmax;
 
       &:before {
         border-top: 1em solid black;
@@ -2080,16 +2097,13 @@ menu button:hover span:last-of-type {
   }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 900px) {
   .contact-me {
     background-color: #131413;
     // text-align: center;
     position: relative;
     width: 100%;
     height: 100%;
-    // padding-bottom: 10px;
-    //padding-right: 80%;
-    //padding-top: 30px;
   }
   .together {
     display: flex;
@@ -2101,7 +2115,7 @@ menu button:hover span:last-of-type {
     animation: border-flicker 2s linear infinite;
     height: 300px;
     width: 320px;
-    transform: translateX(10%);
+    transform: translateX(8vw);
   }
 
   .card {
@@ -2111,7 +2125,7 @@ menu button:hover span:last-of-type {
     position: relative;
     width: 280px;
     height: 100%;
-    transform: translate(14%, -60%);
+    transform: translate(10vw, -15vh);
     //margin: auto;
     //transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -2209,8 +2223,9 @@ menu button:hover span:last-of-type {
   .menu-bar {
     position: fixed;
     z-index: 1;
-    left: 3%;
-    top: 94%;
+    // left: 2vw;
+    top: 95vh;
+    left: -15vw;
     // justify-content: center;
   }
 
@@ -2221,7 +2236,7 @@ menu button:hover span:last-of-type {
     position: absolute;
     // top: 20%;
     // left: 0;
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
     list-style: none;
   }
 
@@ -2232,11 +2247,10 @@ menu button:hover span:last-of-type {
     position: absolute;
     //  top: 0;
     // left: 50%;
-    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ece6ff;
+    color: rgb(159, 229, 37);
     border: 2px solid rgb(159, 229, 37);
     border-radius: 50%;
     cursor: pointer;
@@ -2417,7 +2431,7 @@ menu button:hover span:last-of-type {
   overflow: hidden;
   border-radius: 100%;
   position: relative;
-  left: 46vh;
+  left: 40vh;
   margin: 1rem 0.5rem;
   cursor: pointer;
   transition: border-radius 0.25s, transform 0.5s, border-color 1s;
@@ -2459,16 +2473,9 @@ menu button:hover span:last-of-type {
   color: rgb(0, 116, 178);
 }
 
-.social-media-button.github:hover a {
-  color: #6e5494;
-}
-
-.social-media-button.google-plus:hover a {
-  color: rgb(205, 64, 48);
-}
-
 @media screen and (min-width: 757px) {
   .message {
+    font-family: "Orbitron", sans-serif;
     color: white;
     position: relative;
   }
@@ -2476,7 +2483,7 @@ menu button:hover span:last-of-type {
   .message span {
     position: absolute;
     top: 8vh;
-    left: 53%;
+    left: 55vw;
   }
 
   .message p {
@@ -2487,7 +2494,7 @@ menu button:hover span:last-of-type {
     letter-spacing: 5px;
     word-spacing: 5px;
     top: 8vh;
-    left: 42.5%;
+    left: 40vw;
   }
 
   .sponsor-message {
@@ -2504,6 +2511,7 @@ menu button:hover span:last-of-type {
 
 /*.......................Typewriter................*/
 .see-you-message {
+  font-family: "Orbitron", sans-serif;
   background: #131413;
   text-align: center;
 }
@@ -2546,6 +2554,7 @@ menu button:hover span:last-of-type {
 }
 
 .map-and-socialMedia {
+  font-family: "Orbitron", sans-serif;
   display: inline-flex;
 }
 @media screen and (min-width: 757px) {
@@ -2601,7 +2610,7 @@ menu button:hover span:last-of-type {
   .message span {
     position: absolute;
     top: 1vh;
-    left: 55%;
+    left: 65vw;
   }
 
   .message p {
@@ -2610,7 +2619,7 @@ menu button:hover span:last-of-type {
     float: inline-start;
     position: absolute;
     top: 1vh;
-    left: 35.6%;
+    left: 30vw;
   }
   .faq-t {
     font-size: 45px;
