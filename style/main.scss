@@ -958,19 +958,6 @@ body {
   padding: 20px 20px 0px 20px;
 }
 
-@-moz-document url-prefix() {
-  .sponsor-content {
-    display: inline-flex;
-    flex-direction: row;
-    padding: 10%;
-  }
-
-  .sponsor-icon {
-    height: 50px;
-    margin-left: 20px;
-  }
-}
-
 .sponsor-container {
   display: inline-block;
   vertical-align: top;
@@ -2705,5 +2692,23 @@ menu button:hover span:last-of-type {
     left: -5%;
     font-family: "Orbitron", sans-serif;
     // animation: skew 5s linear infinite;
+  }
+}
+
+@-moz-document url-prefix() {
+  .sponsor-content {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10%;
+  }
+
+  .sponsor-icon {
+    height: 50px;
+    margin-left: 20px;
+  }
+  .card {
+    h1 {
+      font-size: 32px;
+    }
   }
 }
