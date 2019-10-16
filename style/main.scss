@@ -1593,7 +1593,7 @@ button {
   z-index: 1;
   top: 85vh;
   transform: translateX(18vw);
-  // justify-content: center;
+  justify-content: center;
 }
 
 menu {
@@ -2225,8 +2225,8 @@ menu button:hover span:last-of-type {
     z-index: 1;
     // left: 2vw;
     top: 95vh;
-    left: -15vw;
-    // justify-content: center;
+    //left: -15vw;
+    justify-content: center;
   }
 
   menu {

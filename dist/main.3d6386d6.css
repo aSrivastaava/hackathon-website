@@ -1486,6 +1486,7 @@ button {
   z-index: 1;
   top: 85vh;
   transform: translateX(18vw);
+  justify-content: center;
 }
 
 menu {
@@ -1917,13 +1918,7 @@ menu button:hover span:last-of-type {
   }
   .timeline li {
     animation: border-flicker 2s linear infinite;
-<<<<<<< HEAD
     width: 25vmax;
-=======
-    width: 42%;
-    left: -12%;
-    transform: translateX(-26%);
->>>>>>> 9a6dabcc190391a85a128c7455056688b1209c91
   }
   .timeline li:nth-child(even) {
     float: right;
@@ -2062,7 +2057,7 @@ menu button:hover span:last-of-type {
     position: fixed;
     z-index: 1;
     top: 95vh;
-    left: -15vw;
+    justify-content: center;
   }
 
   menu {
