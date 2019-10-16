@@ -1037,20 +1037,20 @@ body {
   font-size: 25px;
   margin-bottom: 5px;
   font-family: "Orbitron", sans-serif;
-  text-shadow: 8px 8px rgba(126, 125, 125, 0.712);
+  text-shadow: 3px 3px rgba(126, 125, 125, 0.712);
 }
 
 .prize-title {
   font-size: 35px;
   font-family: "Orbitron", sans-serif;
-  text-shadow: 8px 8px rgba(126, 125, 125, 0.712);
+  text-shadow: 3px 3px rgba(126, 125, 125, 0.712);
 }
 
 .prize-number {
   font-size: 24px;
   margin-bottom: 5px;
   font-family: "Orbitron", sans-serif;
-  text-shadow: 8px 8px rgba(165, 161, 161, 0.712);
+  text-shadow: 3px 3px rgba(165, 161, 161, 0.712);
   position: relative;
   color: #9fe525;
   top: 5px;
@@ -2057,7 +2057,7 @@ menu button:hover span:last-of-type {
     position: fixed;
     z-index: 1;
     top: 95vh;
-    justify-content: center;
+    left: -15vw;
   }
 
   menu {
@@ -2241,7 +2241,7 @@ menu button:hover span:last-of-type {
   overflow: hidden;
   border-radius: 100%;
   position: relative;
-  left: 40vh;
+  left: 22vw;
   margin: 1rem 0.5rem;
   cursor: pointer;
   transition: border-radius 0.25s, transform 0.5s, border-color 1s;
@@ -2293,7 +2293,7 @@ menu button:hover span:last-of-type {
   .message span {
     position: absolute;
     top: 8vh;
-    left: 55vw;
+    left: 51vw;
   }
 
   .message p {
@@ -2327,6 +2327,7 @@ menu button:hover span:last-of-type {
 }
 
 #typewriter {
+  font-weight: bold;
   font-size: 4em;
   margin: 25px;
   font-family: inherit;
@@ -2380,7 +2381,7 @@ menu button:hover span:last-of-type {
     margin-right: 51px;
   }
 }
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 768px) {
   .pc {
     display: none;
   }
