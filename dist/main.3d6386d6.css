@@ -883,6 +883,7 @@ body {
 }
 
 .sponsor .sponsor-title:first-child {
+  font-family: "Orbitron", sans-serif;
   margin-top: 20px;
 }
 
@@ -946,7 +947,7 @@ body {
 
 .prizes-title {
   color: #9fe525;
-  font-family: "Orbitron", sans-serif;
+  font-family: inherit;
   font-size: 40px;
   margin: 0;
   margin-bottom: 30px;
@@ -962,6 +963,7 @@ body {
   position: absolute;
   top: -47px;
   animation: skew 5s linear infinite;
+  font-family: inherit;
 }
 
 .sponsor-t {
@@ -1740,6 +1742,7 @@ menu button:hover span:last-of-type {
   .card p {
     display: block;
     font-size: 22px;
+    font-family: "Orbitron", sans-serif;
   }
   .card a {
     color: #69c6b8;
@@ -2460,6 +2463,55 @@ menu button:hover span:last-of-type {
   .sponsor-message a {
     color: white;
     margin: 0px 10px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .menu-bar {
+    position: fixed;
+    z-index: 1;
+    top: 90vh;
+    left: 15vw;
+    transform: translateX(18vw);
+    align-content: center;
+    justify-content: center;
+  }
+
+  menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -1vw;
+    transform: translateY(-50%);
+    list-style: none;
+  }
+
+  #devfolio-apply-now {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #3770ff;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+    position: relative;
+    left: 7%;
+  }
+
+  .sponsor-t {
+    position: absolute;
+    top: 30%;
+    left: -5%;
+    font-family: "Orbitron", sans-serif;
   }
 }
 

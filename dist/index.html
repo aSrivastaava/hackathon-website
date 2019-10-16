@@ -4,7 +4,7 @@
 
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:700" rel="stylesheet">
@@ -200,11 +200,13 @@
                 </div> -->
 
 
-            </div><div class="devfolio-button">
+            </div>
+            <div class="devfolio-button">
             <button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px">
                     <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z"></path>
                     <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"></path>
-                </svg>Apply with Devfolio</button></div>
+                </svg>Apply with Devfolio</button>
+            </div>
         </div>
     </div>
    <!-- --------------------Landing Page END------------- -->
@@ -508,7 +510,8 @@
    
    
     <div class="prizes" id="prize">
-        <p class="prizes-title prize-t" style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i class="fa fa-chevron-right a-r"></i>Prizes</p><br>
+        <p class="prizes-title prize-t" style="font-family: 'Orbitron', sans-serif;margin-left: 20px;padding-top: 30px;margin-bottom: 0;">
+            <i class="fa fa-chevron-right a-r"></i>Prizes</p><br>
        
             <div class="multiple-items">
                 <div class="prize">
@@ -564,7 +567,8 @@
     <!-- ------------------Prize END----------------- -->
 
     <div class="faq" id="faq">
-        <p class="sponsors-title faq-t" style="font-family: 'Cousine', monospace;margin-left: 20px;padding-top: 30px;margin-bottom: 0;"><i class="fa fa-chevron-right a-r"></i>FAQ</p><br>
+        <p class="sponsors-title faq-t" style="font-family: 'Orbitron', sans-serif;margin-left: 0px;padding-top: 30px;margin-bottom: 0;">
+            <i class="fa fa-chevron-right a-r"></i>FAQ</p><br>
         <div class="faq-boxes">
             <ul class="accordion1">
                 <li>
@@ -586,15 +590,6 @@
                     <a class="toggle" href="#">Who owns my project?</a>
                     <p class="inner">
                         Project is owned by the team who has developed it.
-                    </p>
-                </li>
-    
-                <li>
-                    <a class="toggle" href="#">How do I participate? What are the criteria for participation?</a>
-                    <p class="inner">
-                        There is a link provided on the website through which you can register yourself.
-                        Criteria for participation are: The participant must be a student. You can participate in groups of minimum 2 and
-                        maximum 4.
                     </p>
                 </li>
                 <li>
@@ -647,6 +642,15 @@
                     <a class="toggle" href="#">Who can participate ?</a>
                     <p class="inner">
                     College students who have valid ID cards, along with government IDs.
+                    </p>
+                </li>
+                <li>
+                    <a class="toggle" href="#">How do I participate? What are the criteria for participation?</a>
+                    <p class="inner">
+                        There is a link provided on the website through which you can register yourself.
+                        Criteria for participation are: The participant must be a student. You can participate in groups of minimum 2
+                        and
+                        maximum 4.
                     </p>
                 </li>
     
@@ -894,7 +898,7 @@ SEE YOU SOON
 var typer = document.getElementById('typewriter');
 typewriter = setupTypewriter(typewriter);
 typewriter.type();</script>
-    <script>$(".toggle").click(function (e) {
+<script>$(".toggle").click(function (e) {
   e.preventDefault();
   var $this = $(this);
 
