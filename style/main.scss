@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
 
 body {
+  background-color: #131413;
   margin: 0;
   font-family: "Orbitron", sans-serif;
 }
 
 .welcome {
-  padding-bottom: 8%;
+  height: 100%;
   text-align: center;
   position: relative;
   background-color: #131413;
@@ -709,7 +710,6 @@ body {
     font-size 0.1s ease-in 0.21s;
   text-transform: uppercase;
   //text-align: center;
-  font-family: "Orbitron", sans-serif;
 }
 // .cBreak-button:p {
 //   padding: 0 15px 0 25px;
@@ -940,6 +940,7 @@ body {
 
 .sponsor-title {
   background-color: black;
+  font-family: "Orbitron", sans-serif;
   color: rgb(159, 229, 37);
   display: inline-block;
   padding: 2px 5px;
@@ -954,6 +955,19 @@ body {
 
 .sponsor-content {
   padding: 20px 20px 0px 20px;
+}
+
+@-moz-document url-prefix() {
+  .sponsor-content {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10%;
+  }
+
+  .sponsor-icon {
+    height: 50px;
+    margin-left: 20px;
+  }
 }
 
 .sponsor-container {
@@ -990,6 +1004,17 @@ body {
 
 .sponsors-title {
   color: rgb(159, 229, 37);
+  font-family: "Orbitron", sans-serif;
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: left;
+  transform: rotate(-90deg);
+}
+
+.prizes-title {
+  color: rgb(159, 229, 37);
+  font-family: "Orbitron", sans-serif;
   font-size: 40px;
   margin: 0;
   margin-bottom: 30px;
@@ -1004,19 +1029,34 @@ body {
   font-size: 40px;
   position: absolute;
   top: -47px;
+  animation: skew 5s linear infinite;
 }
 
 .sponsor-t {
   position: absolute;
-  top: -47px;
-  animation: skew 5s linear infinite;
+  top: 30%;
+  left: -10%;
+  font-family: "Orbitron", sans-serif;
+  // animation: skew 5s linear infinite;
 }
 .contact-t {
   font-size: 40px;
   position: absolute;
+  font-family: "Orbitron", sans-serif;
   top: -80px;
   animation: skew 5s linear infinite;
 }
+
+@media screen and (max-width: 756px) {
+  .sponsor-t {
+    position: absolute;
+    top: -3.5%;
+    left: 1%;
+    transform: translate(1%, -3.5%);
+    animation: skew 5s linear infinite;
+  }
+}
+
 @keyframes skew {
   0% {
     transform: skewX(0deg);
@@ -1045,33 +1085,6 @@ body {
 .prize {
   padding: 20px;
 }
-
-// .winner {
-//   background-image: url("/images/winner.jpg");
-//   background-size: cover;
-// }
-
-// .runner1 {
-//   background-image: url("/images/runner1.jpg");
-//   background-size: cover;
-// }
-
-// .runner2 {
-//   background-image: url("/images/runner2.jpg");
-//   background-size: cover;
-// }
-
-// .girlWinner {
-//   background-image: url("/images/girlWinner.jpg");
-//   background-size: cover;
-//   background-position: center;
-// }
-
-// .school {
-//   background-image: url("/images/MIT-ADT-1.jpg");
-//   background-size: cover;
-//   background-position: center;
-// }
 
 .prize {
   height: 226px !important;
@@ -1198,23 +1211,14 @@ body {
 
 .contact-me {
   background-color: #131413;
-  // text-align: center;
   position: relative;
-  // padding-bottom: 10px;
-  //padding-right: 80%;
   padding-top: 30px;
-  //width: 50%;
 }
 
 .timelineDiv {
   background-color: rgb(29, 29, 29);
-  //text-align: center;
   position: relative;
-  //padding-bottom: 10px;
-  //padding-right: 80%;
-  //padding-top: 30px;
-  // width: 50%;
-  //height: 90%;
+  font-family: "Orbitron", sans-serif;
   color: rgb(159, 229, 37);
   font-size: 20px;
   letter-spacing: 2px;
@@ -1222,6 +1226,7 @@ body {
 
 .timelineDiv-t {
   font-size: 44px;
+  font-family: "Orbitron", sans-serif;
   position: absolute;
   top: -40px;
   animation: skew 5s linear infinite;
@@ -1229,13 +1234,9 @@ body {
 
 .faq {
   background-color: #131413cb;
-  //text-align: center;
+  font-family: "Orbitron", sans-serif;
   position: relative;
   padding-bottom: 10px;
-  //padding-right: 80%;
-  //padding-top: 30px;
-  // width: 50%;
-  height: 90%;
   color: rgb(159, 229, 37);
   font-size: 20px;
   letter-spacing: 2px;
@@ -1244,13 +1245,9 @@ body {
 .faq-t {
   font-size: 45px;
   position: absolute;
-  top: -40px;
-  animation: skew 5s linear infinite;
-}
-
-.faq-boxes {
-  position: relative;
-  top: 10%;
+  top: 40px;
+  left: -20px;
+  // animation: skew 5s linear infinite;
 }
 
 .contact-title {
@@ -1275,17 +1272,17 @@ container {
   align-content: center;
 }
 .map {
-  margin-bottom: 5vh;
+  // margin-bottom: 5vh;
   position: relative;
   //left: 10%;
-  transform: translateX(80%);
+  transform: translate(18vw, -1vh);
   //  padding-left: 20%;
   background-color: transparent;
   // animation: flick 1s ease 1s, a 5s linear 1s infinite;
   animation: border-flicker 2s linear infinite;
   //animation: glow 800ms ease-out infinite alternate;
-  height: 550px;
-  width: 550px;
+  height: 400px;
+  width: 450px;
 }
 
 .socialHandler {
@@ -1553,10 +1550,11 @@ ul {
   width: 75%;
   position: relative;
   left: 10%;
-  animation: border-flicker 2s linear infinite;
+  // animation: border-flicker 2s linear infinite;
 }
 
 ul .inner {
+  color: white;
   padding-left: 1em;
   overflow: hidden;
   display: none;
@@ -1572,7 +1570,7 @@ ul li a.toggle {
   width: 100%;
   display: block;
   background: rgba(0, 0, 0, 0.78);
-  color: #fefefe;
+  color: rgb(159, 229, 37);
   padding: 0.75em;
   border-radius: 0.15em;
   transition: background 0.3s ease;
@@ -1593,8 +1591,8 @@ button {
 .menu-bar {
   position: fixed;
   z-index: 1;
-  left: 27%;
-  top: 88%;
+  top: 85vh;
+  transform: translateX(18vw);
   // justify-content: center;
 }
 
@@ -1618,8 +1616,8 @@ menu li {
 
 menu button {
   transition: all 450ms cubic-bezier(0.4, 0.25, 0.3, 1.3);
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   //  top: 0;
   // left: 50%;
@@ -1627,8 +1625,8 @@ menu button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ece6ff;
-  border: 5px solid rgb(159, 229, 37);
+  color: rgb(159, 229, 37);
+  // border: 2px solid rgb(159, 229, 37);
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
@@ -1662,7 +1660,7 @@ menu button:hover {
 }
 
 menu button:hover span:first-of-type {
-  transform: translate(-50%, -150%);
+  transform: translate(-50%, -190%);
 }
 menu button:hover span:last-of-type {
   transform: translate(-50%, -50%);
@@ -1836,53 +1834,101 @@ menu button:hover span:last-of-type {
       0 4px 0 #000;
   }
 }
-
-.card {
-  pointer-events: none;
-  color: white;
-  padding: 30px;
-  border-radius: 5px;
-  position: relative;
-  top: 10vh;
-  transform: translateX(40%);
-  width: 500px;
-  height: 250px;
-  backface-visibility: hidden;
-  //display: block;
-  box-shadow: 0 0 5px rgb(159, 229, 37);
-  //position: relative;
-  background-color: transparent;
-
-  &:after {
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 10px;
-    border-radius: 50%;
-    left: 0;
-    bottom: -50px;
-    box-shadow: 0 30px 20px rgb(159, 229, 37);
-  }
-
-  .card-content {
+@media screen and (min-width: 757px) {
+  .card {
+    pointer-events: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
     position: relative;
-    top: 15%;
-    text-align: center;
-  }
-  h1 {
-    font-size: 39px;
-  }
+    top: 10vh;
+    transform: translate(30%, -20%);
+    width: 450px;
+    height: 200px;
+    backface-visibility: hidden;
+    //display: block;
+    box-shadow: 0 0 5px rgb(159, 229, 37);
+    //position: relative;
+    background-color: transparent;
 
-  p {
-    display: block;
-    font-size: 22px;
-  }
-  a {
-    color: #69c6b8;
-    pointer-events: auto;
+    &:after {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      border-radius: 50%;
+      left: 0;
+      bottom: -50px;
+      box-shadow: 0 30px 20px rgb(159, 229, 37);
+    }
+
+    .card-content {
+      position: relative;
+      top: 15%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 34px;
+    }
+
+    p {
+      display: block;
+      font-size: 22px;
+    }
+    a {
+      color: #69c6b8;
+      pointer-events: auto;
+    }
   }
 }
 
+@media screen and (max-width: 756px) {
+  .card {
+    pointer-events: none;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    top: 10vh;
+    transform: translate(30%, -20%);
+    width: 450px;
+    height: 200px;
+    backface-visibility: hidden;
+    //display: block;
+    box-shadow: 0 0 5px rgb(159, 229, 37);
+    //position: relative;
+    background-color: transparent;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      border-radius: 50%;
+      left: 0;
+      bottom: -50px;
+      box-shadow: 0 30px 20px rgb(159, 229, 37);
+    }
+
+    .card-content {
+      position: relative;
+      top: 15%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 34px;
+    }
+
+    p {
+      display: block;
+      font-size: 22px;
+    }
+    a {
+      color: #69c6b8;
+      pointer-events: auto;
+    }
+  }
+}
 .t-glitch {
   position: relative;
   text-decoration: none;
@@ -1945,7 +1991,7 @@ menu button:hover span:last-of-type {
     height: 100%;
     width: 5px;
     background: black;
-    left: 0;
+    left: 5vh;
   }
 
   h2 {
@@ -1962,7 +2008,7 @@ menu button:hover span:last-of-type {
   ul {
     list-style: none;
     padding: 0 0 0 1em;
-    z-index: 1;
+    z-index: auto;
   }
 
   li {
@@ -1991,40 +2037,51 @@ menu button:hover span:last-of-type {
     font-style: italic;
   }
 }
-
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 900px) {
   .container {
     max-width: 100px;
     margin: 0 auto;
   }
-
   .timeline {
     &:before {
-      left: 50%;
-      transform: translateX(50%);
-      //margin-top: 50%;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 5px;
+      background: black;
+      left: 50vmax;
+    }
+
+    h2 {
+      background: black;
+      max-width: 6em;
+      margin: 0 auto 1em;
+      margin-top: 5%;
+      padding: 0.5em;
+      text-align: center;
+      position: relative;
+      clear: both;
     }
 
     ul {
       padding-left: 0;
-      max-width: 700px;
-      margin: 10 auto;
+      max-width: 100vmax;
     }
 
     li {
       animation: border-flicker 2s linear infinite;
-      width: 42%;
-      // left: -25%;
-      transform: translateX(-52%);
+      width: 25vmax;
     }
 
     li:nth-child(even) {
       float: right;
       margin-top: 2em;
+      right: 4vw;
     }
 
     li:nth-child(odd) {
       float: left;
+      left: 11vmax;
 
       &:before {
         border-top: 1em solid black;
@@ -2040,16 +2097,13 @@ menu button:hover span:last-of-type {
   }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 900px) {
   .contact-me {
     background-color: #131413;
     // text-align: center;
     position: relative;
     width: 100%;
     height: 100%;
-    // padding-bottom: 10px;
-    //padding-right: 80%;
-    //padding-top: 30px;
   }
   .together {
     display: flex;
@@ -2061,7 +2115,7 @@ menu button:hover span:last-of-type {
     animation: border-flicker 2s linear infinite;
     height: 300px;
     width: 320px;
-    transform: translateX(18%);
+    transform: translateX(8vw);
   }
 
   .card {
@@ -2071,7 +2125,7 @@ menu button:hover span:last-of-type {
     position: relative;
     width: 280px;
     height: 100%;
-    transform: translateX(14%);
+    transform: translate(10vw, -15vh);
     //margin: auto;
     //transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -2169,8 +2223,9 @@ menu button:hover span:last-of-type {
   .menu-bar {
     position: fixed;
     z-index: 1;
-    left: 3%;
-    top: 94%;
+    // left: 2vw;
+    top: 95vh;
+    left: -15vw;
     // justify-content: center;
   }
 
@@ -2181,7 +2236,7 @@ menu button:hover span:last-of-type {
     position: absolute;
     // top: 20%;
     // left: 0;
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
     list-style: none;
   }
 
@@ -2192,11 +2247,10 @@ menu button:hover span:last-of-type {
     position: absolute;
     //  top: 0;
     // left: 50%;
-    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ece6ff;
+    color: rgb(159, 229, 37);
     border: 2px solid rgb(159, 229, 37);
     border-radius: 50%;
     cursor: pointer;
@@ -2263,9 +2317,34 @@ menu button:hover span:last-of-type {
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
-  text-transform: lowercase;
-  // position: relative;
-  // left: 45%;
+  // text-transform: lowercase;
+  position: relative;
+  left: -15%;
+}
+
+@media screen and (max-width: 756px) {
+  #devfolio-apply-now {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #3770ff;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+    // text-transform: lowercase;
+    position: relative;
+    left: 0%;
+  }
 }
 
 #devfolio-apply-now:not([disabled]) {
@@ -2339,25 +2418,20 @@ menu button:hover span:last-of-type {
   }
 }
 
-.footer {
-  background-color: black;
-  width: 100%;
-  padding-bottom: 65px;
-  position: relative;
-}
 .social-media-buttons {
-  background-color: black;
+  background-color: transparent;
   text-align: center;
-  //  margin: 4rem 0;
+  margin: 2.5rem 0;
 }
 
 .social-media-button {
-  display: inline-flex;
-  width: 4rem;
-  height: 4rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border: 2px solid #fff;
+  overflow: hidden;
   border-radius: 100%;
   position: relative;
+  left: 40vh;
   margin: 1rem 0.5rem;
   cursor: pointer;
   transition: border-radius 0.25s, transform 0.5s, border-color 1s;
@@ -2399,29 +2473,20 @@ menu button:hover span:last-of-type {
   color: rgb(0, 116, 178);
 }
 
-.social-media-button.github:hover a {
-  color: #6e5494;
-}
-
-.social-media-button.google-plus:hover a {
-  color: rgb(205, 64, 48);
-}
-
 @media screen and (min-width: 757px) {
   .message {
-    background: white;
-    color: black;
+    font-family: "Orbitron", sans-serif;
+    color: white;
     position: relative;
   }
 
   .message span {
     position: absolute;
     top: 8vh;
-    left: 53%;
+    left: 55vw;
   }
 
   .message p {
-    background-color: white;
     font-weight: bolder;
     margin: 0;
     float: inline-start;
@@ -2429,7 +2494,7 @@ menu button:hover span:last-of-type {
     letter-spacing: 5px;
     word-spacing: 5px;
     top: 8vh;
-    left: 44.5%;
+    left: 40vw;
   }
 
   .sponsor-message {
@@ -2444,78 +2509,15 @@ menu button:hover span:last-of-type {
   }
 }
 
-@media screen and (max-width: 756px) {
-  .message {
-    background: white;
-    color: black;
-    position: relative;
-  }
-
-  .message span {
-    position: absolute;
-    top: 9vh;
-    left: 55%;
-  }
-
-  .message p {
-    background-color: white;
-    font-weight: bolder;
-    margin: 0;
-    float: inline-start;
-    position: absolute;
-    top: 9vh;
-    left: 35.6%;
-  }
-
-  .faq {
-    background-color: #131413cb;
-    //text-align: center;
-    position: relative;
-    padding-bottom: 10px;
-    //padding-right: 80%;
-    //padding-top: 30px;
-    // width: 50%;
-    height: 90%;
-    color: rgb(159, 229, 37);
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-
-  .faq-t {
-    font-size: 45px;
-    position: absolute;
-    top: -40px;
-    animation: skew 5s linear infinite;
-  }
-
-  .faq-boxes {
-    position: relative;
-    top: 10%;
-  }
-
-  .sponsor-message {
-    color: rgb(159, 229, 37);
-    //display: inline-flex;
-    //flex-direction: row;
-    font-size: 20px;
-  }
-  .sponsor-message p {
-    margin: 10px;
-  }
-  .sponsor-message a {
-    color: white;
-    margin: 0px 10px;
-  }
-}
-
 /*.......................Typewriter................*/
 .see-you-message {
+  font-family: "Orbitron", sans-serif;
   background: #131413;
   text-align: center;
 }
 #typewriter {
-  font-size: 2em;
-  margin: 0px;
+  font-size: 4em;
+  margin: 25px;
   font-family: inherit;
   color: rgb(159, 229, 37);
   &:after {
@@ -2548,5 +2550,100 @@ menu button:hover span:last-of-type {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.map-and-socialMedia {
+  font-family: "Orbitron", sans-serif;
+  display: inline-flex;
+}
+@media screen and (min-width: 757px) {
+  .phone {
+    display: none;
+  }
+  .faq-boxes {
+    display: inline-flex;
+    width: 80%;
+  }
+
+  .accordion1 {
+    margin-right: 51px;
+  }
+}
+@media screen and (max-width: 756px) {
+  .pc {
+    display: none;
+  }
+  .social-media-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid #fff;
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
+    left: 5.1vh;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+    transition: border-radius 0.25s, transform 0.5s, border-color 1s;
+  }
+  .see-you-message {
+    position: relative;
+  }
+  #typewriter {
+    font-size: 2.5em;
+    margin: 0px;
+    font-family: inherit;
+    position: relative;
+    transform: translateY(-152%);
+    color: rgb(159, 229, 37);
+    &:after {
+      content: "|";
+      animation: blink 500ms linear infinite alternate;
+    }
+  }
+
+  .message {
+    color: white;
+    position: relative;
+  }
+
+  .message span {
+    position: absolute;
+    top: 1vh;
+    left: 65vw;
+  }
+
+  .message p {
+    font-weight: bolder;
+    margin: 0;
+    float: inline-start;
+    position: absolute;
+    top: 1vh;
+    left: 30vw;
+  }
+  .faq-t {
+    font-size: 45px;
+    position: absolute;
+    top: -40px;
+    animation: skew 5s linear infinite;
+  }
+
+  .faq-boxes {
+    position: relative;
+    top: 10%;
+  }
+
+  .sponsor-message {
+    color: rgb(159, 229, 37);
+    //display: inline-flex;
+    //flex-direction: row;
+    font-size: 20px;
+  }
+  .sponsor-message p {
+    margin: 10px;
+  }
+  .sponsor-message a {
+    color: white;
+    margin: 0px 10px;
   }
 }
