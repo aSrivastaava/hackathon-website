@@ -62,6 +62,7 @@
     margin-top: 10px;
   }
 
+
 }
 
 /* Small phones to Small tablets: from 481px to 767px */
@@ -126,7 +127,7 @@
     }
 
     .card {
-      margin-top: 80px;
+      margin-top: 100px;
       margin-right: 30px !important;
       width: 65% !important;
     }
@@ -138,6 +139,12 @@
     .card-content h1 {
       padding-right: 10% !important;
       font-size: 110% !important;
+    }
+    .menu-bar{
+      position: fixed;
+      z-index: 1;
+      transform: translateX(-20%);   
+      top: 85%;
     }
 
 }
@@ -163,4 +170,23 @@
     .hourglass1 {
         display: none !important;
     }
+
+    .menu-bar{
+      position: fixed;
+      z-index: 1;
+      transform: translateX(-30%);   
+      top: 85%;
+    }
 }
+
+/* @media only screen and (max-width: 950px) {
+    .menu-bar {
+      padding-left: -50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-bar {
+    padding-left: -50%;
+  }
+} */
