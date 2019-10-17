@@ -2514,5 +2514,21 @@ menu button:hover span:last-of-type {
     font-family: "Orbitron", sans-serif;
   }
 }
+@-moz-document url-prefix() {
+  .sponsor-content {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10%;
+  }
+
+  .sponsor-icon {
+    height: 50px;
+    margin-left: 20px;
+  }
+
+  .card h1 {
+    font-size: 31px;
+  }
+}
 
 /*# sourceMappingURL=/main.3d6386d6.css.map */

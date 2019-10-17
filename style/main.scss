@@ -2707,3 +2707,24 @@ menu button:hover span:last-of-type {
     // animation: skew 5s linear infinite;
   }
 }
+
+
+
+@-moz-document url-prefix() {
+  .sponsor-content {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10%;
+  }
+
+  .sponsor-icon {
+    height: 50px;
+    margin-left: 20px;
+  }
+
+  .card {
+    h1 {
+      font-size: 31px;
+    }
+  }
+}
