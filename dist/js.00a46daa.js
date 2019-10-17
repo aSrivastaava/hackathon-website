@@ -160,11 +160,7 @@ $(document).ready(function () {
     }
   }
 });
-<<<<<<< HEAD
 },{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-=======
-},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
->>>>>>> dbafeea4c782ee33bd354df04fb4d364e670a48a
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -192,27 +188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-<<<<<<< HEAD
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39085" + '/');
-=======
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39743" + '/');
-=======
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39681" + '/');
-=======
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58079" + '/');
-=======
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39017" + '/');
->>>>>>> 9a6dabcc190391a85a128c7455056688b1209c91
->>>>>>> ba7edeec0948e0a1b5fda9866d4415d39bc3fc5f
->>>>>>> 1e45a40f16a337d01b8b2bf66d5c3939cc8a32ae
->>>>>>> 1a9e8d5264268219b13e377990ef9a40f335678f
-=======
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50531" + '/');
->>>>>>> dbafeea4c782ee33bd354df04fb4d364e670a48a
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33119" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -388,9 +364,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-<<<<<<< HEAD
 },{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
-=======
-},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
->>>>>>> dbafeea4c782ee33bd354df04fb4d364e670a48a
 //# sourceMappingURL=/js.00a46daa.js.map
