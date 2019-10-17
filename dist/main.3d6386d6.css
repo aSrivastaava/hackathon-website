@@ -1032,9 +1032,10 @@ body {
 
 .prize-detail {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  margin: auto;
   color: #2BBC94;
+  text-align: center;
+  padding-top: 20%;
 }
 
 .prize-trata {
@@ -1488,9 +1489,8 @@ button {
 .menu-bar {
   position: fixed;
   z-index: 1;
-  top: 85vh;
-  transform: translateX(18vw);
-  justify-content: center;
+  top: 85%;
+  padding-left: 27%;
 }
 
 menu {

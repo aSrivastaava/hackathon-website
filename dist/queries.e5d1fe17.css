@@ -62,6 +62,7 @@
     margin-top: 10px;
   }
 
+
 }
 
 /* Small phones to Small tablets: from 481px to 767px */
@@ -139,6 +140,12 @@
       padding-right: 10% !important;
       font-size: 110% !important;
     }
+    .menu-bar{
+      position: fixed;
+      z-index: 1;
+      transform: translateX(-20%);   
+      top: 85%;
+    }
 
 }
 
@@ -163,6 +170,25 @@
     .hourglass1 {
         display: none !important;
     }
+
+    .menu-bar{
+      position: fixed;
+      z-index: 1;
+      transform: translateX(-30%);   
+      top: 85%;
+    }
 }
+
+/* @media only screen and (max-width: 950px) {
+    .menu-bar {
+      padding-left: -50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-bar {
+    padding-left: -50%;
+  }
+} */
 
 /*# sourceMappingURL=/queries.e5d1fe17.css.map */
