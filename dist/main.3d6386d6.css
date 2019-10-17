@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #131413;
   margin: 0;
@@ -1754,7 +1758,6 @@ menu button:hover span:last-of-type {
     padding: 30px;
     border-radius: 5px;
     position: relative;
-    top: 10vh;
     transform: translate(30%, -20%);
     width: 450px;
     height: 200px;
