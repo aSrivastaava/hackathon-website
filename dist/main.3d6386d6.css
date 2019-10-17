@@ -696,20 +696,9 @@ body {
 .about-title {
   margin-top: 0;
   position: absolute;
-  left: 0px;
-  top: 90px;
+  left: 80px;
+  top: -12px;
   font-size: 40px;
-  transform: rotate(-90deg);
-}
-
-.about-title::after {
-  width: 100px;
-  height: 3px;
-  background-color: #9fe525;
-  content: "";
-  position: absolute;
-  left: -120px;
-  top: 9px;
 }
 
 .cBreak-about {
@@ -929,7 +918,6 @@ body {
   margin: 0;
   margin-bottom: 30px;
   text-align: left;
-  transform: rotate(-90deg);
 }
 
 .prizes-title {
@@ -949,15 +937,25 @@ body {
   font-size: 40px;
   position: absolute;
   top: -47px;
+  left: 1%;
   animation: skew 5s linear infinite;
   font-family: inherit;
 }
 
 .sponsor-t {
   position: absolute;
-  top: 30%;
-  left: -10%;
+  top: -8%;
+  left: 1%;
   font-family: "Orbitron", sans-serif;
+  animation: skew 5s linear infinite;
+}
+
+.about-t {
+  position: absolute;
+  top: 0%;
+  left: 1%;
+  font-family: "Orbitron", sans-serif;
+  animation: skew 5s linear infinite;
 }
 
 .contact-t {
@@ -974,6 +972,14 @@ body {
     top: -3.5%;
     left: 1%;
     transform: translate(1%, -3.5%);
+    animation: skew 5s linear infinite;
+  }
+
+  .about-t {
+    position: absolute;
+    top: 0%;
+    left: 1%;
+    transform: translate(1%, 0%);
     animation: skew 5s linear infinite;
   }
 }
@@ -1160,8 +1166,8 @@ body {
 .faq-t {
   font-size: 45px;
   position: absolute;
-  top: 40px;
-  left: -20px;
+  top: -10%;
+  left: 1%;
 }
 
 .contact-title {
@@ -2492,13 +2498,6 @@ menu button:hover span:last-of-type {
     text-align: center;
     position: relative;
     left: 7%;
-  }
-
-  .sponsor-t {
-    position: absolute;
-    top: 30%;
-    left: -5%;
-    font-family: "Orbitron", sans-serif;
   }
 }
 @-moz-document url-prefix() {
