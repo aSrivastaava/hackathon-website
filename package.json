@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel serve index.html --port 80",
+    "start": "parcel serve index.html",
     "build": "parcel build --public-url . index.html"
   },
   "repository": {
