@@ -696,20 +696,9 @@ body {
 .about-title {
   margin-top: 0;
   position: absolute;
-  left: 0px;
-  top: 90px;
+  left: 80px;
+  top: -12px;
   font-size: 40px;
-  transform: rotate(-90deg);
-}
-
-.about-title::after {
-  width: 100px;
-  height: 3px;
-  background-color: #9fe525;
-  content: "";
-  position: absolute;
-  left: -120px;
-  top: 9px;
 }
 
 .cBreak-about {
@@ -883,6 +872,7 @@ body {
 }
 
 .sponsor .sponsor-title:first-child {
+  font-family: "Orbitron", sans-serif;
   margin-top: 20px;
 }
 
@@ -890,22 +880,9 @@ body {
   padding: 20px 20px 0px 20px;
 }
 
-@-moz-document url-prefix() {
-  .sponsor-content {
-    display: inline-flex;
-    flex-direction: row;
-    padding: 10%;
-  }
-
-  .sponsor-icon {
-    height: 50px;
-    margin-left: 20px;
-  }
-}
 .sponsor-container {
   display: inline-block;
   vertical-align: top;
-  width: 23%;
   margin-right: 1%;
   margin-left: 1%;
   min-width: 250px;
@@ -941,12 +918,11 @@ body {
   margin: 0;
   margin-bottom: 30px;
   text-align: left;
-  transform: rotate(-90deg);
 }
 
 .prizes-title {
   color: #9fe525;
-  font-family: "Orbitron", sans-serif;
+  font-family: inherit;
   font-size: 40px;
   margin: 0;
   margin-bottom: 30px;
@@ -961,21 +937,32 @@ body {
   font-size: 40px;
   position: absolute;
   top: -47px;
+  left: 1%;
   animation: skew 5s linear infinite;
+  font-family: inherit;
 }
 
 .sponsor-t {
   position: absolute;
-  top: 30%;
-  left: -10%;
+  top: -8%;
+  left: 1%;
   font-family: "Orbitron", sans-serif;
+  animation: skew 5s linear infinite;
+}
+
+.about-t {
+  position: absolute;
+  top: 0%;
+  left: 1%;
+  font-family: "Orbitron", sans-serif;
+  animation: skew 5s linear infinite;
 }
 
 .contact-t {
   font-size: 40px;
   position: absolute;
   font-family: "Orbitron", sans-serif;
-  top: -80px;
+  top: -55px;
   animation: skew 5s linear infinite;
 }
 
@@ -985,6 +972,14 @@ body {
     top: -3.5%;
     left: 1%;
     transform: translate(1%, -3.5%);
+    animation: skew 5s linear infinite;
+  }
+
+  .about-t {
+    position: absolute;
+    top: 0%;
+    left: 1%;
+    transform: translate(1%, 0%);
     animation: skew 5s linear infinite;
   }
 }
@@ -1037,20 +1032,20 @@ body {
   font-size: 25px;
   margin-bottom: 5px;
   font-family: "Orbitron", sans-serif;
-  text-shadow: 8px 8px rgba(126, 125, 125, 0.712);
+  text-shadow: 3px 3px rgba(126, 125, 125, 0.712);
 }
 
 .prize-title {
   font-size: 35px;
   font-family: "Orbitron", sans-serif;
-  text-shadow: 8px 8px rgba(126, 125, 125, 0.712);
+  text-shadow: 3px 3px rgba(126, 125, 125, 0.712);
 }
 
 .prize-number {
   font-size: 24px;
   margin-bottom: 5px;
   font-family: "Orbitron", sans-serif;
-  text-shadow: 8px 8px rgba(165, 161, 161, 0.712);
+  text-shadow: 3px 3px rgba(165, 161, 161, 0.712);
   position: relative;
   color: #9fe525;
   top: 5px;
@@ -1171,8 +1166,8 @@ body {
 .faq-t {
   font-size: 45px;
   position: absolute;
-  top: 40px;
-  left: -20px;
+  top: -10%;
+  left: 1%;
 }
 
 .contact-title {
@@ -1390,8 +1385,8 @@ loader:after {
   }
 }
 @media only screen and (max-width: 600px) {
-  .sponsor-container {
-    width: 95%;
+  .sponsor-icon {
+    height: 9%;
   }
 }
 .js i {
@@ -1486,6 +1481,7 @@ button {
   z-index: 1;
   top: 85vh;
   transform: translateX(18vw);
+  justify-content: center;
 }
 
 menu {
@@ -1739,6 +1735,7 @@ menu button:hover span:last-of-type {
   .card p {
     display: block;
     font-size: 22px;
+    font-family: "Orbitron", sans-serif;
   }
   .card a {
     color: #69c6b8;
@@ -2240,7 +2237,7 @@ menu button:hover span:last-of-type {
   overflow: hidden;
   border-radius: 100%;
   position: relative;
-  left: 40vh;
+  left: 22vw;
   margin: 1rem 0.5rem;
   cursor: pointer;
   transition: border-radius 0.25s, transform 0.5s, border-color 1s;
@@ -2292,7 +2289,7 @@ menu button:hover span:last-of-type {
   .message span {
     position: absolute;
     top: 8vh;
-    left: 55vw;
+    left: 51vw;
   }
 
   .message p {
@@ -2326,6 +2323,7 @@ menu button:hover span:last-of-type {
 }
 
 #typewriter {
+  font-weight: bold;
   font-size: 4em;
   margin: 25px;
   font-family: inherit;
@@ -2379,7 +2377,7 @@ menu button:hover span:last-of-type {
     margin-right: 51px;
   }
 }
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 768px) {
   .pc {
     display: none;
   }
@@ -2458,6 +2456,70 @@ menu button:hover span:last-of-type {
   .sponsor-message a {
     color: white;
     margin: 0px 10px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .menu-bar {
+    position: fixed;
+    z-index: 1;
+    top: 90vh;
+    left: 15vw;
+    transform: translateX(18vw);
+    align-content: center;
+    justify-content: center;
+  }
+
+  menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -1vw;
+    transform: translateY(-50%);
+    list-style: none;
+  }
+
+  #devfolio-apply-now {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #3770ff;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+    position: relative;
+    left: 7%;
+  }
+}
+@-moz-document url-prefix() {
+  .sponsor-container {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 20px;
+  }
+
+  .sponsor-content {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  .sponsor-icon {
+    height: 50px;
+  }
+
+  .card h1 {
+    font-size: 31px;
   }
 }
 
