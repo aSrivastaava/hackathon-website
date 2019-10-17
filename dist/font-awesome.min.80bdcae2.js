@@ -117,11 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-<<<<<<< HEAD
 })({"node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
-=======
-})({"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
->>>>>>> 0014132346c4b395129c6d369fa9741c896d0447
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -153,11 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-<<<<<<< HEAD
 },{}],"node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
-=======
-},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
->>>>>>> 0014132346c4b395129c6d369fa9741c896d0447
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -192,20 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-<<<<<<< HEAD
 },{"./bundle-url":"node_modules/parcel/src/builtins/bundle-url.js"}],"font-awesome-4.7.0/css/font-awesome.min.css":[function(require,module,exports) {
-=======
-},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"font-awesome-4.7.0/css/font-awesome.min.css":[function(require,module,exports) {
->>>>>>> 0014132346c4b395129c6d369fa9741c896d0447
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-<<<<<<< HEAD
 },{"./../fonts/fontawesome-webfont.eot":[["fontawesome-webfont.4656fcef.eot","font-awesome-4.7.0/fonts/fontawesome-webfont.eot"],"font-awesome-4.7.0/fonts/fontawesome-webfont.eot"],"./../fonts/fontawesome-webfont.woff2":[["fontawesome-webfont.3a80971e.woff2","font-awesome-4.7.0/fonts/fontawesome-webfont.woff2"],"font-awesome-4.7.0/fonts/fontawesome-webfont.woff2"],"./../fonts/fontawesome-webfont.woff":[["fontawesome-webfont.87828cbd.woff","font-awesome-4.7.0/fonts/fontawesome-webfont.woff"],"font-awesome-4.7.0/fonts/fontawesome-webfont.woff"],"./../fonts/fontawesome-webfont.ttf":[["fontawesome-webfont.533af11a.ttf","font-awesome-4.7.0/fonts/fontawesome-webfont.ttf"],"font-awesome-4.7.0/fonts/fontawesome-webfont.ttf"],"./../fonts/fontawesome-webfont.svg":[["fontawesome-webfont.18e2f764.svg","font-awesome-4.7.0/fonts/fontawesome-webfont.svg"],"font-awesome-4.7.0/fonts/fontawesome-webfont.svg"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-=======
-},{"./..\\fonts\\fontawesome-webfont.eot":[["fontawesome-webfont.4656fcef.eot","font-awesome-4.7.0/fonts/fontawesome-webfont.eot"],"font-awesome-4.7.0/fonts/fontawesome-webfont.eot"],"./..\\fonts\\fontawesome-webfont.woff2":[["fontawesome-webfont.3a80971e.woff2","font-awesome-4.7.0/fonts/fontawesome-webfont.woff2"],"font-awesome-4.7.0/fonts/fontawesome-webfont.woff2"],"./..\\fonts\\fontawesome-webfont.woff":[["fontawesome-webfont.87828cbd.woff","font-awesome-4.7.0/fonts/fontawesome-webfont.woff"],"font-awesome-4.7.0/fonts/fontawesome-webfont.woff"],"./..\\fonts\\fontawesome-webfont.ttf":[["fontawesome-webfont.533af11a.ttf","font-awesome-4.7.0/fonts/fontawesome-webfont.ttf"],"font-awesome-4.7.0/fonts/fontawesome-webfont.ttf"],"./..\\fonts\\fontawesome-webfont.svg":[["fontawesome-webfont.18e2f764.svg","font-awesome-4.7.0/fonts/fontawesome-webfont.svg"],"font-awesome-4.7.0/fonts/fontawesome-webfont.svg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
->>>>>>> 0014132346c4b395129c6d369fa9741c896d0447
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -233,11 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39895" + '/');
-=======
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52386" + '/');
->>>>>>> 0014132346c4b395129c6d369fa9741c896d0447
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44665" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -413,9 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-<<<<<<< HEAD
 },{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js"], null)
-=======
-},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
->>>>>>> 0014132346c4b395129c6d369fa9741c896d0447
 //# sourceMappingURL=/font-awesome.min.80bdcae2.js.map
