@@ -2439,28 +2439,30 @@ menu button:hover span:last-of-type {
     left: 7%;
   }
 }
-.sponsors {
-  background-color: #131413;
-  padding: 1%;
-  text-align: center;
-  font-family: "Orbitron", sans-serif;
-  position: relative;
-  margin: 1%;
-}
+@-moz-document url-prefix() {
+  .sponsors {
+    background-color: #131413;
+    padding: 1%;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    position: relative;
+    margin: 1%;
+  }
 
-.sponsor .dev-icon {
-  font-size: 80px;
-  color: #2BBC94;
-  display: block;
-  align-self: center;
-  align-items: center;
-  text-align: center;
-}
+  .sponsor .dev-icon {
+    font-size: 80px;
+    color: #2BBC94;
+    display: block;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+  }
 
-.sponsor-icon {
-  height: 50%;
-  float: center;
-  padding-bottom: 2%;
+  .sponsor-icon {
+    height: 50%;
+    float: center;
+    padding-bottom: 2%;
+  }
 }
 
 /*# sourceMappingURL=/main.3d6386d6.css.map */
