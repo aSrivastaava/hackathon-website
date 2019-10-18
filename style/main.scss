@@ -2386,19 +2386,19 @@ menu button:hover span:last-of-type {
   background-color: #2954bf !important;
 }
 
-// .devfolio-button {
-//   position: absolute;
-//   left: 44%;
-//   align-content: center;
-// }
+.devfolio-button {
+  position: absolute;
+  left: 44%;
+  align-content: center;
+}
 
 @media screen and (max-width: 700px) {
-  // .devfolio-button {
-  //   position: absolute;
-  //   top: 82%;
-  //   left: 25%;
-  //   align-content: center;
-  // }
+  .devfolio-button {
+    position: absolute;
+    top: 82%;
+    left: 25%;
+    align-content: center;
+  }
 
   .socialHandler {
     position: relative;
@@ -2541,7 +2541,7 @@ menu button:hover span:last-of-type {
   }
   .sponsor-message a {
     color: white;
-    
+
   }
 }
 
@@ -2759,7 +2759,7 @@ menu button:hover span:last-of-type {
     align-items: center;
     text-align: center;
   }
-  
+
   .sponsor-icon {
     height: 50%;
     float: center;
@@ -2767,4 +2767,3 @@ menu button:hover span:last-of-type {
   }
 
 }
-

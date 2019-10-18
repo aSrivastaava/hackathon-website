@@ -2121,7 +2121,20 @@ menu button:hover span:last-of-type {
   background-color: #2954bf !important;
 }
 
+.devfolio-button {
+  position: absolute;
+  left: 44%;
+  align-content: center;
+}
+
 @media screen and (max-width: 700px) {
+  .devfolio-button {
+    position: absolute;
+    top: 82%;
+    left: 25%;
+    align-content: center;
+  }
+
   .socialHandler {
     position: relative;
     top: 25vh;
