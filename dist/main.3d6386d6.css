@@ -785,10 +785,6 @@ body {
 .sponsor {
   position: relative;
   display: inline-block;
-  width: calc(100% - 50px);
-  text-align: left;
-  vertical-align: top;
-  margin-bottom: 25px;
 }
 
 .sponsor .dev-icon {
@@ -796,14 +792,13 @@ body {
   color: #2BBC94;
   display: block;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .sponsor-icon {
   height: 10%;
-  float: right;
-  padding-bottom: 10%;
+  float: left;
+  padding-bottom: 2%;
+  padding-right: 1.7%;
 }
 
 .hide {
@@ -882,7 +877,7 @@ body {
 
 .sponsor .sponsor-title:first-child {
   font-family: "Orbitron", sans-serif;
-  margin-top: 20px;
+  margin-top: 20%;
 }
 
 .sponsor-content {
@@ -894,8 +889,9 @@ body {
   vertical-align: top;
   margin-right: 1%;
   margin-left: 1%;
-  min-width: 250px;
-  margin-bottom: 20px;
+  min-width: auto;
+  margin-bottom: 2%;
+  white-space: wrap;
 }
 
 .progress {
@@ -976,23 +972,6 @@ body {
   animation: skew 5s linear infinite;
 }
 
-@media screen and (max-width: 756px) {
-  .sponsor-t {
-    position: absolute;
-    top: -9%;
-    left: 1%;
-    transform: translate(1%, -3.5%);
-    animation: skew 5s linear infinite;
-  }
-
-  .about-t {
-    position: absolute;
-    top: 0%;
-    left: 1%;
-    transform: translate(1%, 0%);
-    animation: skew 5s linear infinite;
-  }
-}
 @keyframes skew {
   0% {
     transform: skewX(0deg);
@@ -1188,7 +1167,7 @@ body {
   color: #2BBC94;
 }
 
-container {
+.container {
   display: inline-block;
   margin: 10px auto 0 auto;
   -webkit-transform: translate3d(0%, 0, 0);
@@ -2273,7 +2252,6 @@ menu button:hover span:last-of-type {
 
   .sponsor-message a {
     color: white;
-    margin: 25px 10px;
   }
 }
 /*.......................Typewriter................*/
@@ -2411,7 +2389,7 @@ menu button:hover span:last-of-type {
   }
 
   .sponsor-message p {
-    margin: 10px;
+    margin: 10%;
   }
 
   .sponsor-message a {
@@ -2461,27 +2439,28 @@ menu button:hover span:last-of-type {
     left: 7%;
   }
 }
-@-moz-document url-prefix() {
-  .sponsor-container {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 1%;
-    margin-left: 1%;
-    margin-bottom: 20px;
-  }
+.sponsors {
+  background-color: #131413;
+  padding: 1%;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+  margin: 1%;
+}
 
-  .sponsor-content {
-    display: inline-flex;
-    flex-direction: row;
-  }
+.sponsor .dev-icon {
+  font-size: 80px;
+  color: #2BBC94;
+  display: block;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+}
 
-  .sponsor-icon {
-    height: 50px;
-  }
-
-  .card h1 {
-    font-size: 31px;
-  }
+.sponsor-icon {
+  height: 50%;
+  float: center;
+  padding-bottom: 2%;
 }
 
 /*# sourceMappingURL=/main.3d6386d6.css.map */
