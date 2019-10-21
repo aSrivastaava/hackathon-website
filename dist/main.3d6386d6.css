@@ -2122,12 +2122,23 @@ menu button:hover span:last-of-type {
 }
 
 .devfolio-button {
+<<<<<<< HEAD
+=======
+  position: absolute;
+  left: 44%;
+>>>>>>> effad34f2c04cb184521527e35aa01d442be7c58
   align-content: center;
 }
 
 @media screen and (max-width: 700px) {
   .devfolio-button {
+<<<<<<< HEAD
     top: 82%;
+=======
+    position: absolute;
+    top: 82%;
+    left: 25%;
+>>>>>>> effad34f2c04cb184521527e35aa01d442be7c58
     align-content: center;
   }
 
