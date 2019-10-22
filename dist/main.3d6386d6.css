@@ -947,7 +947,6 @@ body {
 }
 
 .sponsor-t {
-  position: absolute;
   top: -15%;
   left: 1%;
   font-family: "Orbitron", sans-serif;
@@ -1136,7 +1135,6 @@ body {
 .timelineDiv-t {
   font-size: 44px;
   font-family: "Orbitron", sans-serif;
-  position: absolute;
   top: -49px;
   animation: skew 5s linear infinite;
 }
