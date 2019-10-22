@@ -947,7 +947,6 @@ body {
 }
 
 .sponsor-t {
-  position: absolute;
   top: -15%;
   left: 1%;
   font-family: "Orbitron", sans-serif;
@@ -1136,7 +1135,6 @@ body {
 .timelineDiv-t {
   font-size: 44px;
   font-family: "Orbitron", sans-serif;
-  position: absolute;
   top: -49px;
   animation: skew 5s linear infinite;
 }
@@ -2122,23 +2120,12 @@ menu button:hover span:last-of-type {
 }
 
 .devfolio-button {
-<<<<<<< HEAD
-=======
-  position: absolute;
-  left: 44%;
->>>>>>> effad34f2c04cb184521527e35aa01d442be7c58
   align-content: center;
 }
 
 @media screen and (max-width: 700px) {
   .devfolio-button {
-<<<<<<< HEAD
     top: 82%;
-=======
-    position: absolute;
-    top: 82%;
-    left: 25%;
->>>>>>> effad34f2c04cb184521527e35aa01d442be7c58
     align-content: center;
   }
 
