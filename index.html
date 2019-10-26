@@ -26,7 +26,7 @@
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
-         
+
          gtag('config', 'UA-150264818-1');
       </script>
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -193,7 +193,7 @@
                      <div class="line"></div>
                      <div class="line"></div>
                   </div>
-                  <!--Right side chain 
+                  <!--Right side chain
                      <div class="chain">
                      <div class="chain-f">
                          <div class="inside-chain"></div>
@@ -230,7 +230,7 @@
                      1.0” ​.
                   </p>
                   <p> You'll have 26 hours to come up with a solution, in the domain you wish to challenge. There are open themes such
-                     as AI, Blockchain, Cloud and emerging technologies. 
+                     as AI, Blockchain, Cloud and emerging technologies.
                   </p>
                   <p> You're free to choose any platform for the development of the
                      solution.
@@ -269,18 +269,21 @@
                         <div class=" my-4 p-2" style="flex: 1 0 25%;">
                            <a href="http://devfolio.co/" target="_blank"><img src="./images/devfolio.png" alt="devfolio-icon"  width="250px"  /></a>
                         </div>
-                        
+
                         <div class=" my-4 p-2" style="flex: 1 0 25%;">
                            <a href="https://matic.network" target="_blank"><img src="./images/matic.png" alt="metric-icon" width="250px" /></a>
                         </div>
                         <div class=" my-4 p-2" style="flex: 1 0 25%; ">
-                           <a href="https://www.creative-tim.com/"  target="_blank"><img class="bg-white p-4" src="./images/creative.png" alt="Creative Tim" width="250px" /></a>
+                           <a href="https://www.creative-tim.com/"  target="_blank"><img src="./images/creative.png" alt="Creative Tim" width="250px" /></a>
                         </div>
                         <div class=" my-4 p-2" style="flex: 1 0 25%; ">
                            <a href="https://zulipchat.com" target="_blank"><img src="./images/zulip.png" alt="Zulip" width="250px" /></a>
                         </div>
                         <div class=" my-4 p-2" style="flex: 1 0 25%;">
                            <a href="https://www.wolfram.com/language/" target="_blank"><img src="./images/wolfram.png" alt="Wolfram Language" width="250px" /></a>
+                        </div>
+                        <div class=" my-4 p-2" style="flex: 1 0 25%;">
+                           <a href="https://www.hellointern.com/" target="_blank"><img src="./images/hellointern.png" alt="Hello Intern" width="250px" /></a>
                         </div>
                      </div>
                   </div>
@@ -588,22 +591,22 @@ SEE YOU SOON
       <script>
          function setupTypewriter(t) {
                  var HTML = t.innerHTML;
-         
+
                  t.innerHTML = "";
-         
+
                  var cursorPosition = 0,
                      tag = "",
                      writingTag = false,
                      tagOpen = false,
                      typeSpeed = 100,
                      tempTypeSpeed = 0;
-         
+
                  var type = function () {
-         
+
                      if (writingTag === true) {
                          tag += HTML[cursorPosition];
                      }
-         
+
                      if (HTML[cursorPosition] === "<") {
                          tempTypeSpeed = 0;
                          if (tagOpen) {
@@ -638,32 +641,32 @@ SEE YOU SOON
                              tag = newSpan.firstChild;
                          }
                      }
-         
+
                      cursorPosition += 1;
                      if (cursorPosition < HTML.length - 1) {
                          setTimeout(type, tempTypeSpeed);
                      }
-         
+
                  };
-         
+
                  return {
                      type: type
                  };
              }
-         
+
              var typer = document.getElementById('typewriter');
-         
+
              typewriter = setupTypewriter(typewriter);
-         
+
              typewriter.type();
-             
+
       </script>
       <script>
          $(".toggle").click(function (e) {
              e.preventDefault();
-         
+
              let $this = $(this);
-         
+
              if ($this.next().hasClass("show")) {
                  $this.next().removeClass("show");
                  $this.next().slideUp(350);
@@ -682,8 +685,8 @@ SEE YOU SOON
                  $this.next().slideToggle(350);
              }
          });
-         
-         
+
+
          $('.count').each(function () {
                  $(this).prop('Counter', 0).animate({
                      Counter: $(this).text()
@@ -702,15 +705,15 @@ SEE YOU SOON
                  buttonSelector: '#devfolio-apply-now',
              key: 'codebreak2019',
          }
-         
+
          let script = document.createElement('script');
          script.src = "https://apply.devfolio.co";
          document.head.append(script);
-         
+
          script.onload = function () {
              new Devfolio(devfolioOptions);
          }
-         
+
          script.onerror = function () {
              document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
                  window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
