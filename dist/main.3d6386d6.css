@@ -2236,18 +2236,20 @@ menu button:hover span:last-of-type {
   .message span {
     position: absolute;
     top: 8vh;
-    left: 51vw;
+    left: 50%;
   }
 
   .message p {
     font-weight: bolder;
     margin: 0;
-    float: inline-start;
-    position: absolute;
     letter-spacing: 5px;
     word-spacing: 5px;
     top: 8vh;
-    left: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
   }
 
   .sponsor-message {
@@ -2260,26 +2262,26 @@ menu button:hover span:last-of-type {
   .sponsor-message a {
     color: white;
   }
-}
-/*.......................Typewriter................*/
-.see-you-message {
-  font-family: "Orbitron", sans-serif;
-  background: #131413;
-  text-align: center;
-}
 
-#typewriter {
-  font-weight: bold;
-  font-size: 4em;
-  margin: 25px;
-  font-family: inherit;
-  color: #2BBC94;
-}
-#typewriter:after {
-  content: "|";
-  animation: blink 500ms linear infinite alternate;
-}
+  .see-you-message {
+    margin: auto;
+    font-family: "Orbitron", sans-serif;
+    background: #131413;
+    text-align: center;
+  }
 
+  #typewriter {
+    font-weight: bold;
+    font-size: 4em;
+    margin: 25px;
+    font-family: inherit;
+    color: #2BBC94;
+  }
+  #typewriter:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+  }
+}
 @-webkit-keyframes blink {
   0% {
     opacity: 0;
@@ -2366,7 +2368,7 @@ menu button:hover span:last-of-type {
   .message span {
     position: absolute;
     top: 1vh;
-    left: 65vw;
+    left: 50%;
   }
 
   .message p {
@@ -2375,7 +2377,11 @@ menu button:hover span:last-of-type {
     float: inline-start;
     position: absolute;
     top: 1vh;
-    left: 30vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
   }
 
   .faq-t {
@@ -2410,23 +2416,26 @@ menu button:hover span:last-of-type {
 }
 @media screen and (min-width: 1900px) {
   .menu-bar {
+    width: 100%;
     position: fixed;
-    z-index: 1;
-    top: 90vh;
-    left: 15vw;
-    transform: translateX(18vw);
-    align-content: center;
-    justify-content: center;
+    top: 90%;
   }
 
-  menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+  .menu {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
     left: -1vw;
     transform: translateY(-50%);
-    list-style: none;
+  }
+
+  .menu li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
   }
 
   #devfolio-apply-now {
@@ -2472,6 +2481,91 @@ menu button:hover span:last-of-type {
     height: 50%;
     float: center;
     padding-bottom: 2%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) and (width: 375px) and (height: 559px) and (orientation: portrait) and (color: 8) and (aspect-ratio: 375/559) and (device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) {
+  .menu-bar {
+    width: 100%;
+    position: fixed;
+    top: 90%;
+  }
+
+  .menu {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    left: -1vw;
+    transform: translateY(-50%);
+  }
+
+  .menu li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .menu-bar {
+    width: 50%;
+    position: fixed;
+    top: 90%;
+  }
+
+  .menu {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .menu li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+  }
+}
+@media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .menu-bar {
+    position: fixed;
+    top: 90%;
+    width: auto;
+  }
+
+  .menu {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .menu li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .menu-bar {
+    position: fixed;
+    top: 90%;
+    width: 50%;
+  }
+
+  .menu {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .menu li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
 }
 
